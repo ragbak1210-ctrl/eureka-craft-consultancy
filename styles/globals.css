@@ -897,3 +897,103 @@ box-shadow:
 0 0 0 1px #facc15;
 
 }
+
+/* ============================
+SCROLL STORYTELLING ANIMATIONS
+============================ */
+
+
+/* Hidden state */
+
+.reveal {
+
+opacity: 0;
+transform: translateY(50px);
+
+transition:
+opacity 0.9s ease,
+transform 0.9s ease;
+
+}
+
+
+/* Visible state */
+
+.reveal-visible {
+
+opacity: 1;
+transform: translateY(0px);
+
+}
+
+
+
+/* Staggered animations */
+
+.reveal-delay-1 {
+
+transition-delay: .1s;
+
+}
+
+.reveal-delay-2 {
+
+transition-delay: .2s;
+
+}
+
+.reveal-delay-3 {
+
+transition-delay: .3s;
+
+}
+
+.reveal-delay-4 {
+
+transition-delay: .4s;
+
+}
+
+
+
+/* Slide from left */
+
+.reveal-left {
+
+opacity:0;
+
+transform:translateX(-60px);
+
+transition:.9s ease;
+
+}
+
+.reveal-left-visible {
+
+opacity:1;
+
+transform:translateX(0px);
+
+}
+
+
+
+/* Slide from right */
+
+.reveal-right {
+
+opacity:0;
+
+transform:translateX(60px);
+
+transition:.9s ease;
+
+}
+
+.reveal-right-visible {
+
+opacity:1;
+
+transform:translateX(0px);
+
+}
