@@ -7,9 +7,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#000000',
-        secondary: '#FFFFFF',
-        accent: '#D4714D', // warm accent color
+
+        /* Brand Colors */
+        primary: '#000000',   // Black
+        secondary: '#FFFFFF', // White
+        accent: '#FFD600',    // Eureka Yellow
+
+        /* Premium Brand Set */
+        brand: {
+          yellow: '#FFD600',
+          black: '#000000',
+          white: '#FFFFFF'
+        },
+
+        /* Neutral Grays */
         gray: {
           50: '#F9FAFB',
           100: '#F3F4F6',
@@ -23,14 +34,17 @@ module.exports = {
           900: '#111827',
         },
       },
+
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Georgia', 'serif'],
       },
+
       spacing: {
         '128': '32rem',
         '144': '36rem',
       },
+
     },
   },
   plugins: [],
