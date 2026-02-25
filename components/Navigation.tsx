@@ -1,70 +1,196 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Navigation() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-20 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
-          Eureka Craft™
-        </Link>
+const [mobileMenuOpen,setMobileMenuOpen]=useState(false);
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 items-center">
-          <Link href="/" className="text-sm font-medium hover:text-accent transition">
-            Home
-          </Link>
-          <Link href="/about" className="text-sm font-medium hover:text-accent transition">
-            About
-          </Link>
-          <Link href="/services" className="text-sm font-medium hover:text-accent transition">
-            Services
-          </Link>
-          <Link href="/clarity-xray" className="text-sm font-medium hover:text-accent transition">
-            Clarity X-Ray™
-          </Link>
-          <Link href="/industries" className="text-sm font-medium hover:text-accent transition">
-            Industries
-          </Link>
-          <Link href="/case-studies" className="text-sm font-medium hover:text-accent transition">
-            Case Studies
-          </Link>
-          <Link href="/insights" className="text-sm font-medium hover:text-accent transition">
-            Insights
-          </Link>
-          <Link href="/contact" className="cta-primary text-xs">
-            Contact
-          </Link>
-        </div>
+const router=useRouter();
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
 
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden">
-            <div className="flex flex-col p-8 gap-4">
-              <Link href="/" className="text-sm font-medium">Home</Link>
-              <Link href="/about" className="text-sm font-medium">About</Link>
-              <Link href="/services" className="text-sm font-medium">Services</Link>
-              <Link href="/clarity-xray" className="text-sm font-medium">Clarity X-Ray™</Link>
-              <Link href="/industries" className="text-sm font-medium">Industries</Link>
-              <Link href="/case-studies" className="text-sm font-medium">Case Studies</Link>
-              <Link href="/insights" className="text-sm font-medium">Insights</Link>
-              <Link href="/contact" className="cta-primary text-xs inline-block w-fit">Contact</Link>
-            </div>
-          </div>
-        )}
-      </div>
-    </nav>
-  );
+const navLinks=[
+
+{href:"/",label:"Home"},
+{href:"/about",label:"About"},
+{href:"/services",label:"Services"},
+{href:"/clarity-xray",label:"Clarity X-Ray™"},
+{href:"/industries",label:"Industries"},
+{href:"/case-studies",label:"Case Studies"},
+{href:"/insights",label:"Insights"}
+
+]
+
+
+return(
+
+<nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
+
+<div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-20 py-5 flex justify-between items-center">
+
+
+
+{/* LOGO */}
+
+<Link
+href="/"
+className="text-2xl font-bold tracking-tight"
+>
+
+Eureka Craft™
+
+</Link>
+
+
+
+
+{/* DESKTOP MENU */}
+
+<div className="hidden md:flex gap-10 items-center">
+
+{navLinks.map(link=>{
+
+const active=router.pathname===link.href
+
+return(
+
+<Link
+key={link.href}
+href={link.href}
+
+className={`relative text-sm font-medium transition
+
+${active
+? "text-black"
+: "text-gray-600 hover:text-black"
+}
+
+`}
+>
+
+{link.label}
+
+
+
+{active && (
+
+<span className="absolute left-0 -bottom-3 w-full h-[3px] bg-accent">
+
+</span>
+
+)}
+
+
+</Link>
+
+)
+
+})}
+
+
+
+<Link
+href="/contact"
+className="cta-primary text-xs"
+>
+
+Contact
+
+</Link>
+
+
+</div>
+
+
+
+{/* MOBILE BUTTON */}
+
+<button
+className="md:hidden"
+onClick={()=>setMobileMenuOpen(!mobileMenuOpen)}
+>
+
+<svg
+className="w-6 h-6"
+fill="none"
+stroke="currentColor"
+viewBox="0 0 24 24"
+>
+
+<path
+strokeLinecap="round"
+strokeLinejoin="round"
+strokeWidth={2}
+d="M4 6h16M4 12h16M4 18h16"
+/>
+
+</svg>
+
+</button>
+
+
+
+
+{/* MOBILE MENU */}
+
+{mobileMenuOpen && (
+
+<div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden">
+
+<div className="flex flex-col p-8 gap-5">
+
+{navLinks.map(link=>{
+
+const active=router.pathname===link.href
+
+return(
+
+<Link
+key={link.href}
+href={link.href}
+
+className={`text-sm font-medium
+
+${active
+? "text-accent font-semibold"
+: "text-gray-700"
+}
+
+`}
+>
+
+{link.label}
+
+</Link>
+
+)
+
+})}
+
+
+
+<Link
+href="/contact"
+className="cta-primary text-xs inline-block w-fit mt-2"
+>
+
+Contact
+
+</Link>
+
+
+
+</div>
+
+</div>
+
+)}
+
+
+
+</div>
+
+</nav>
+
+)
 }
