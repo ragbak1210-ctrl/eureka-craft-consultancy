@@ -1,13 +1,64 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 import '../styles/globals.css';
 
-
 export default function App({ Component, pageProps }: AppProps) {
+
+  useEffect(() => {
+
+    const revealOnScroll = () => {
+
+      const windowHeight = window.innerHeight;
+
+      // Fade Up
+      document.querySelectorAll('.reveal').forEach((el) => {
+
+        const top = el.getBoundingClientRect().top;
+
+        if (top < windowHeight - 80) {
+          el.classList.add('reveal-visible');
+        }
+
+      });
+
+      // Slide Left
+      document.querySelectorAll('.reveal-left').forEach((el) => {
+
+        const top = el.getBoundingClientRect().top;
+
+        if (top < windowHeight - 80) {
+          el.classList.add('reveal-left-visible');
+        }
+
+      });
+
+      // Slide Right
+      document.querySelectorAll('.reveal-right').forEach((el) => {
+
+        const top = el.getBoundingClientRect().top;
+
+        if (top < windowHeight - 80) {
+          el.classList.add('reveal-right-visible');
+        }
+
+      });
+
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+
+    revealOnScroll();
+
+    return () => window.removeEventListener('scroll', revealOnScroll);
+
+  }, []);
+
+
   return (
     <>
 
