@@ -12,31 +12,36 @@ export default function Home() {
         />
       </Head>
 
+
+
 {/* ================= HERO ================= */}
 
-<section className="hero-premium bg-white">
+<section className="hero-premium bg-premium hero-glow">
 
 <div className="container-premium">
 
-<div className="grid lg:grid-cols-2 gap-20 items-center">
+<div className="grid lg:grid-cols-2 gap-24 items-center">
 
-<div className="content-narrow">
 
-<p className="text-accent font-semibold mb-6 tracking-wide">
+{/* LEFT */}
+
+<div className="content-narrow reveal-left">
+
+<p className="text-accent font-semibold mb-6 tracking-wider">
 
 CLARITY-FIRST BRAND CONSULTING
 
 </p>
 
 
-<h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+<h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-6">
 
 Most Businesses Don't Have a Marketing Problem.
 
 </h1>
 
 
-<h1 className="text-6xl md:text-7xl font-bold mb-8 text-accent leading-tight">
+<h1 className="text-6xl md:text-7xl font-bold text-accent mb-8 heading-luxury">
 
 They Have a Clarity Problem.
 
@@ -52,16 +57,17 @@ brand strategy.
 </p>
 
 
-<div className="flex flex-wrap gap-6 mb-12">
 
-<Link href="/clarity-xray" className="cta-accent">
+<div className="flex flex-wrap gap-6 mb-14">
 
-Start With The Clarity X-Ray™
+<Link href="/clarity-xray" className="btn-luxury">
+
+Start The Clarity X-Ray™
 
 </Link>
 
 
-<Link href="/case-studies" className="cta-secondary">
+<Link href="/case-studies" className="btn-outline-luxury">
 
 View Case Studies
 
@@ -71,20 +77,16 @@ View Case Studies
 
 
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-500">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-gray-500">
 
 <div>
 
-<p className="font-semibold text-black">
-
+<p className="font-semibold text-black mb-1">
 Consulting-Led Approach
-
 </p>
 
 <p>
-
 Strategy before execution
-
 </p>
 
 </div>
@@ -92,16 +94,12 @@ Strategy before execution
 
 <div>
 
-<p className="font-semibold text-black">
-
+<p className="font-semibold text-black mb-1">
 Structured Methodology
-
 </p>
 
 <p>
-
 Clarity X-Ray™ Framework
-
 </p>
 
 </div>
@@ -109,16 +107,12 @@ Clarity X-Ray™ Framework
 
 <div>
 
-<p className="font-semibold text-black">
-
+<p className="font-semibold text-black mb-1">
 Long-Term Growth
-
 </p>
 
 <p>
-
 Narrative-driven visibility
-
 </p>
 
 </div>
@@ -129,11 +123,11 @@ Narrative-driven visibility
 
 
 
-{/* Right Side Premium Block */}
+{/* RIGHT */}
 
-<div className="hidden lg:block">
+<div className="hidden lg:block reveal-right">
 
-<div className="card-premium border border-gray-200 bg-white">
+<div className="card-luxury">
 
 <p className="text-accent font-semibold mb-4">
 
@@ -168,7 +162,7 @@ Where Most Brands Struggle
 
 <Link
 href="/clarity-xray"
-className="font-semibold text-accent hover:underline"
+className="text-accent font-semibold link-luxury"
 >
 
 See The Clarity X-Ray →
@@ -181,6 +175,7 @@ See The Clarity X-Ray →
 
 </div>
 
+
 </div>
 
 </div>
@@ -191,22 +186,22 @@ See The Clarity X-Ray →
 
 {/* ================= PROBLEM ================= */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-luxury bg-white reveal">
 
-<div className="container-premium">
+<div className="container-luxury">
 
-<h2 className="text-5xl font-bold mb-6">
+<h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
 Why Most Marketing Doesn't Work
 
 </h2>
 
-<div className="section-divider mb-12"></div>
+<div className="divider-luxury"></div>
 
 
 <div className="content-narrow">
 
-<p className="text-premium mb-8">
+<p className="text-soft mb-10">
 
 Despite strong products and capable teams, many businesses
 struggle to translate expertise into a clear narrative.
@@ -214,7 +209,7 @@ struggle to translate expertise into a clear narrative.
 </p>
 
 
-<ul className="space-y-4 text-premium mb-10">
+<ul className="space-y-4 text-soft mb-10">
 
 <li className="flex gap-3">
 <span className="text-accent font-bold">•</span>
@@ -250,22 +245,22 @@ Most companies fix output. Very few fix origin.
 
 {/* ================= APPROACH ================= */}
 
-<section className="section-premium bg-white">
+<section className="section-luxury bg-premium reveal">
 
-<div className="container-premium">
+<div className="container-luxury">
 
-<h2 className="text-5xl font-bold mb-6">
+<h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
 Stop Auditing. Start Aligning.
 
 </h2>
 
-<div className="section-divider mb-12"></div>
+<div className="divider-luxury"></div>
 
 
 <div className="content-narrow space-y-8">
 
-<p className="text-premium">
+<p className="text-soft">
 
 Eureka Craft is a clarity-first consulting studio that aligns
 brand positioning, messaging, and narrative before execution
@@ -273,7 +268,7 @@ begins.
 
 </p>
 
-<p className="text-premium">
+<p className="text-soft">
 
 Our work begins with <strong>The Clarity X-Ray™</strong> —
 a proprietary blindspot audit that identifies where brands
@@ -291,21 +286,21 @@ silently lose trust and impact.
 
 {/* ================= CONSULTING AREAS ================= */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-luxury bg-white">
 
-<div className="container-premium">
+<div className="container-luxury">
 
-<h2 className="text-5xl font-bold mb-6">
+<h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
 Consulting Areas
 
 </h2>
 
-<div className="section-divider mb-16"></div>
+<div className="divider-luxury"></div>
 
 
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
 
 
 {[
@@ -337,7 +332,7 @@ desc:"Websites built as clarity-driven brand assets."
 
 <div key={index}
 
-className="card-premium border border-gray-200 bg-white hover:border-accent transition">
+className="card-luxury reveal">
 
 <h3 className="text-xl font-semibold mb-4">
 
@@ -365,21 +360,21 @@ className="card-premium border border-gray-200 bg-white hover:border-accent tran
 
 {/* ================= INDUSTRIES ================= */}
 
-<section className="section-premium bg-white">
+<section className="section-luxury bg-premium">
 
-<div className="container-premium">
+<div className="container-luxury">
 
-<h2 className="text-5xl font-bold mb-6">
+<h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
 Industries We Serve
 
 </h2>
 
-<div className="section-divider mb-16"></div>
+<div className="divider-luxury"></div>
 
 
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
 
 
 {[
@@ -401,7 +396,7 @@ Industries We Serve
 
 <div key={index}
 
-className="p-6 border border-gray-200 rounded bg-gray-50 hover:border-accent transition">
+className="card-luxury reveal">
 
 <p className="font-semibold">
 
@@ -423,9 +418,9 @@ className="p-6 border border-gray-200 rounded bg-gray-50 hover:border-accent tra
 
 {/* ================= AUTHORITY ================= */}
 
-<section className="section-premium bg-black text-white">
+<section className="section-luxury bg-premium-dark text-white">
 
-<div className="container-premium text-center">
+<div className="container-luxury text-center">
 
 <h2 className="text-5xl font-bold mb-8">
 
@@ -448,28 +443,30 @@ We Make Brands Easier To Understand, Trust, And Choose.
 
 {/* ================= FINAL CTA ================= */}
 
-<section className="section-premium bg-white">
+<section className="section-luxury bg-white">
 
-<div className="container-premium text-center">
+<div className="container-luxury text-center">
 
-<h2 className="text-4xl font-bold mb-8">
+<h2 className="text-4xl font-bold mb-10">
 
 Read How Your Brand Actually Sounds.
 
 </h2>
 
 
-<Link href="/clarity-xray"
+<Link
+href="/clarity-xray"
+className="btn-luxury">
 
-className="cta-accent inline-block">
-
-Start With The Clarity X-Ray™
+Start The Clarity X-Ray™
 
 </Link>
 
 </div>
 
 </section>
+
+
 
     </>
   );
