@@ -12,9 +12,13 @@ export default function Home() {
         />
       </Head>
 
+
       {/* Hero Section */}
+
       <section className="section-spacing bg-white">
+
         <div className="container-wide">
+
           <div className="max-w-4xl">
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -44,17 +48,23 @@ export default function Home() {
             </div>
 
           </div>
+
         </div>
+
       </section>
 
 
+
       {/* Problem Section */}
+
       <section className="section-spacing bg-gray-50">
+
         <div className="container-wide">
 
           <h2 className="text-4xl md:text-5xl font-bold mb-12">
             Why Most Marketing Doesn't Work
           </h2>
+
 
           <div className="max-w-3xl">
 
@@ -62,6 +72,7 @@ export default function Home() {
               Despite strong products and capable teams, many businesses
               struggle to translate expertise into a clear narrative.
             </p>
+
 
             <ul className="space-y-4 mb-8 text-lg text-gray-700">
 
@@ -82,22 +93,29 @@ export default function Home() {
 
             </ul>
 
+
             <p className="text-lg font-semibold text-black">
               Most companies fix output. Very few fix origin.
             </p>
 
           </div>
+
         </div>
+
       </section>
 
 
+
       {/* Eureka Craft Approach */}
+
       <section className="section-spacing bg-white">
+
         <div className="container-wide">
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Stop Auditing. Start Aligning.
           </h2>
+
 
           <div className="max-w-3xl space-y-6">
 
@@ -108,48 +126,104 @@ export default function Home() {
             </p>
 
             <p className="text-lg text-gray-600">
-              Our work begins with <strong>The Clarity X-Ray™</strong> — a
-              proprietary blindspot audit that identifies where brands silently
-              lose trust and impact.
+              Our work begins with <strong>The Clarity X-Ray™</strong> —
+              a proprietary blindspot audit that identifies where brands
+              silently lose trust and impact.
             </p>
 
           </div>
 
         </div>
+
       </section>
 
 
+
       {/* Consulting Areas */}
+
       <section className="section-spacing bg-gray-50">
+
         <div className="container-wide">
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Consulting Areas
           </h2>
 
+          <div className="w-20 h-1 bg-accent mb-12"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
 
             {[
-              'Brand Positioning & Narrative Strategy',
-              'Messaging Architecture',
-              'LinkedIn Thought Leadership',
-              'Content Systems',
-              'Digital Marketing Alignment',
-              'Brand Communication Frameworks',
+              {
+                title: "Brand Positioning & Narrative Strategy",
+                desc: "We help businesses articulate what they truly stand for — and why it matters to the market. From positioning clarity to brand storytelling, we turn fragmented messaging into a coherent narrative that builds long-term trust."
+              },
+
+              {
+                title: "The Clarity X-Ray™",
+                desc: "Our proprietary blindspot audit diagnoses where your brand silently loses trust. We analyze messaging, positioning, digital presence, and audience perception to uncover the gaps most businesses never see."
+              },
+
+              {
+                title: "Messaging Architecture & Brand Voice",
+                desc: "We design structured messaging systems that make your brand consistent across platforms. This includes tone, vocabulary, positioning language, and narrative flow."
+              },
+
+              {
+                title: "LinkedIn Thought Leadership Systems",
+                desc: "We turn founders and leadership teams into visible authorities. This includes narrative strategy, content planning, and execution frameworks."
+              },
+
+              {
+                title: "Content Strategy & Narrative Systems",
+                desc: "We build content ecosystems designed for long-term brand growth — not random posting. Every piece of content supports a larger narrative."
+              },
+
+              {
+                title: "Social Media Strategy & Execution",
+                desc: "We manage and execute brand-aligned content across LinkedIn, Instagram, Facebook, and other channels with a narrative-first approach."
+              },
+
+              {
+                title: "SEO & Organic Visibility Systems",
+                desc: "We improve discoverability by aligning SEO with brand clarity and content strategy. Search visibility works best when messaging is aligned."
+              },
+
+              {
+                title: "Website Strategy & Content Development",
+                desc: "We transform websites into clarity-driven brand assets. This includes messaging architecture, page structure, and conversion flow."
+              },
+
+              {
+                title: "Digital Marketing Alignment",
+                desc: "We ensure paid campaigns, content, and brand messaging work together instead of operating in silos."
+              },
+
+              {
+                title: "Lead Generation & Funnel Strategy",
+                desc: "We design clarity-driven lead generation funnels that convert attention into qualified conversations."
+              },
+
+              {
+                title: "Brand Consulting & Growth Advisory",
+                desc: "We work directly with founders and leadership teams as strategic brand advisors. This includes ongoing brand decision-making and communication alignment."
+              }
+
             ].map((service, index) => (
 
               <div
                 key={index}
-                className="border border-gray-300 p-8 rounded"
+                className="bg-white border border-gray-300 p-8 rounded hover:border-accent transition"
               >
 
                 <h3 className="text-xl font-semibold mb-4">
-                  {service}
+                  {service.title}
                 </h3>
 
-                <p className="text-gray-600">
-                  Strategic clarity and alignment to build trust and visibility.
+                <p className="text-gray-600 leading-relaxed">
+                  {service.desc}
                 </p>
 
               </div>
@@ -159,11 +233,15 @@ export default function Home() {
           </div>
 
         </div>
+
       </section>
 
 
-      {/* Clarity X-Ray */}
+
+      {/* Clarity X-Ray Section */}
+
       <section className="section-spacing bg-white">
+
         <div className="container-wide">
 
           <div className="max-w-3xl mb-12">
@@ -193,7 +271,7 @@ export default function Home() {
                 'Positioning weaknesses',
                 'Messaging inconsistencies',
                 'Funnel misalignment',
-                'Trust leaks',
+                'Trust leaks'
               ].map((item, index) => (
 
                 <li
@@ -219,10 +297,13 @@ export default function Home() {
           </div>
 
         </div>
+
       </section>
 
 
-      {/* Industries We Serve */}
+
+      {/* Industries */}
+
       <section className="section-spacing bg-gray-50">
 
         <div className="container-wide">
@@ -232,6 +313,7 @@ export default function Home() {
           </h2>
 
           <div className="w-20 h-1 bg-accent mb-10"></div>
+
 
           <p className="text-lg text-gray-600 max-w-3xl mb-12">
             Eureka Craft works with ambitious founders and organisations
@@ -279,7 +361,9 @@ export default function Home() {
       </section>
 
 
-      {/* Authority Section */}
+
+      {/* Authority */}
+
       <section className="section-spacing bg-black text-white">
 
         <div className="container-wide text-center">
@@ -297,7 +381,9 @@ export default function Home() {
       </section>
 
 
+
       {/* Final CTA */}
+
       <section className="section-spacing bg-white">
 
         <div className="container-wide text-center">
