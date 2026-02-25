@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Contact() {
 
@@ -13,19 +13,13 @@ industry:'',
 message:''
 })
 
-
-const handleChange=(e:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>{
-setFormData({
-...formData,
-[e.target.name]:e.target.value
-})
+const handleChange=(e:any)=>{
+setFormData({...formData,[e.target.name]:e.target.value})
 }
 
-
-const handleSubmit=(e:React.FormEvent)=>{
+const handleSubmit=(e:any)=>{
 e.preventDefault()
-console.log(formData)
-alert("Thank you. We will respond personally.")
+alert("Thank you. We'll respond personally.")
 setFormData({
 name:'',
 email:'',
@@ -37,38 +31,39 @@ message:''
 }
 
 
-
 return(
 <>
 
 <Head>
 <title>Contact — Eureka Craft™</title>
-<meta name="description" content="Start your clarity journey with Eureka Craft."/>
+<meta name="description" content="Start with clarity. Every meaningful engagement begins with understanding."/>
 </Head>
 
 
 
 {/* HERO */}
 
-<section className="section-spacing bg-white">
+<section className="hero-premium hero-glow">
 
-<div className="container-wide max-w-3xl">
+<div className="container-premium">
 
-<h1 className="text-5xl md:text-6xl font-bold mb-6">
-Start With Clarity
-</h1>
+<div className="content-narrow reveal">
 
+<p className="text-accent font-semibold mb-6 tracking-wide">
 
-<p className="text-xl text-gray-600 mb-8">
-
-Every meaningful engagement begins with understanding.
+START WITH CLARITY
 
 </p>
 
 
-<div className="space-y-6 text-lg text-gray-600">
+<h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-8">
 
-<p>
+Every Meaningful Engagement Begins With Understanding
+
+</h1>
+
+
+<p className="text-premium mb-8">
 
 Some brands struggle because they lack visibility.
 Others struggle because they lack clarity.
@@ -77,39 +72,48 @@ Most struggle because they cannot see where the real problem begins.
 
 </p>
 
-<p>
 
-Before campaigns, content calendars, or marketing plans — we begin with diagnosis.
+<p className="text-premium mb-10">
+
+Before campaigns, content calendars, or marketing plans —
+we begin with diagnosis.
 
 That is where real progress starts.
 
 </p>
 
-<p className="font-semibold text-black">
 
-This conversation is not about selling services.
-It is about understanding your brand as it exists today — and how it can work better tomorrow.
+<div className="flex flex-wrap gap-6">
 
-</p>
-
-</div>
-
-
-
-<div className="mt-10 flex flex-col sm:flex-row gap-4">
-
-<Link href="/clarity-xray" className="cta-accent">
+<Link
+href="/clarity-xray"
+className="cta-accent"
+>
 
 Start The Clarity X-Ray™
 
 </Link>
 
 
-<Link href="#contactform" className="cta-secondary">
+<a
+href="#form"
+className="cta-secondary"
+>
 
 Schedule a Conversation
 
-</Link>
+</a>
+
+</div>
+
+
+<p className="text-sm text-gray-500 mt-10">
+
+This conversation is not about selling services.
+It is about understanding your brand as it exists today —
+and how it can work better tomorrow.
+
+</p>
 
 </div>
 
@@ -121,18 +125,22 @@ Schedule a Conversation
 
 {/* WHEN TO REACH OUT */}
 
-<section className="section-spacing bg-gray-50">
+<section className="section-premium bg-white">
 
-<div className="container-wide max-w-3xl">
+<div className="container-premium">
 
-<h2 className="text-4xl md:text-5xl font-bold mb-10">
+<div className="content-narrow reveal">
+
+<h2 className="text-5xl font-bold mb-8">
 
 You May Be In The Right Place If:
 
 </h2>
 
+<div className="section-divider mb-12"></div>
 
-<div className="space-y-5 text-lg text-gray-700">
+
+<div className="space-y-6 text-premium">
 
 <p>• Your business is growing, but your brand story feels unclear.</p>
 
@@ -151,7 +159,7 @@ You May Be In The Right Place If:
 </div>
 
 
-<p className="mt-10 text-lg text-black font-semibold">
+<p className="text-premium mt-12">
 
 Clarity often begins with recognizing that something isn't aligned.
 
@@ -159,42 +167,45 @@ Clarity often begins with recognizing that something isn't aligned.
 
 </div>
 
+</div>
+
 </section>
 
 
 
-{/* WHAT HAPPENS NEXT */}
+{/* PROCESS */}
 
-<section className="section-spacing bg-white">
+<section className="section-premium bg-gray-50">
 
-<div className="container-wide">
+<div className="container-premium">
 
-<h2 className="text-4xl md:text-5xl font-bold mb-16">
+<h2 className="text-5xl font-bold mb-6 reveal">
 
 What Happens Next
 
 </h2>
 
+<div className="section-divider mb-16"></div>
+
 
 <div className="grid md:grid-cols-3 gap-10">
 
+<div className="card-premium reveal">
 
+<h3 className="text-xl font-semibold mb-6">
 
-<div className="border border-gray-300 p-8 rounded">
-
-<h3 className="text-xl font-bold mb-4">
-
-Initial Understanding
+Step 1 — Initial Understanding
 
 </h3>
 
-<p className="text-gray-600">
+<p className="text-premium">
 
-We begin with a focused conversation about your business, your goals, and your current marketing ecosystem.
+We begin with a focused conversation about your business,
+your goals, and your current marketing ecosystem.
 
 </p>
 
-<p className="text-gray-600 mt-4">
+<p className="text-premium mt-6">
 
 No presentations.
 
@@ -208,65 +219,64 @@ Just structured understanding.
 
 
 
-<div className="border border-gray-300 p-8 rounded">
+<div className="card-premium reveal">
 
-<h3 className="text-xl font-bold mb-4">
+<h3 className="text-xl font-semibold mb-6">
 
-Clarity X-Ray™ Diagnostic
+Step 2 — Clarity X-Ray™ Diagnostic
 
 </h3>
 
-<p className="text-gray-600 mb-4">
+<p className="text-premium mb-6">
 
-If there is a clear fit, we move into the Clarity X-Ray™ — our structured blindspot analysis designed to reveal:
-
-</p>
-
-
-<p className="text-gray-600">
-
-• Positioning gaps<br/>
-• Narrative misalignment<br/>
-• Messaging inconsistencies<br/>
-• Trust leaks<br/>
-• Growth opportunities
+If there is a clear fit, we move into the Clarity X-Ray™.
 
 </p>
+
+<ul className="space-y-3 text-premium">
+
+<li>• Positioning gaps</li>
+<li>• Narrative misalignment</li>
+<li>• Messaging inconsistencies</li>
+<li>• Trust leaks</li>
+<li>• Growth opportunities</li>
+
+</ul>
 
 </div>
 
 
 
-<div className="border border-gray-300 p-8 rounded">
+<div className="card-premium reveal">
 
-<h3 className="text-xl font-bold mb-4">
+<h3 className="text-xl font-semibold mb-6">
 
-Alignment Roadmap
+Step 3 — Alignment Roadmap
 
 </h3>
 
-<p className="text-gray-600 mb-4">
+<p className="text-premium mb-6">
 
 You receive a structured clarity roadmap that shows:
 
 </p>
 
-<p className="text-gray-600">
+<ul className="space-y-3 text-premium">
 
-• Where your brand stands today<br/>
-• What needs alignment<br/>
-• What should be prioritized<br/>
-• How growth can be structured
+<li>• Where your brand stands today</li>
+<li>• What needs alignment</li>
+<li>• What to prioritize</li>
+<li>• How growth can be structured</li>
 
-</p>
-
-</div>
-
+</ul>
 
 </div>
 
 
-<p className="text-center text-lg font-semibold mt-14">
+</div>
+
+
+<p className="text-center text-premium mt-16 reveal">
 
 This process removes guesswork — for both of us.
 
@@ -278,27 +288,32 @@ This process removes guesswork — for both of us.
 
 
 
-{/* CONTACT FORM */}
+{/* FORM */}
 
-<section id="contactform" className="section-spacing bg-gray-50">
+<section id="form" className="section-premium bg-white">
 
-<div className="container-wide max-w-3xl">
+<div className="container-premium max-w-3xl">
 
-<h2 className="text-4xl md:text-5xl font-bold mb-6">
+<div className="reveal">
+
+<h2 className="text-5xl font-bold mb-6">
 
 Tell Us About Your Brand
 
 </h2>
 
-<p className="text-lg text-gray-600 mb-10">
+<div className="section-divider mb-10"></div>
+
+
+<p className="text-premium mb-12">
 
 A few details help us understand where to begin.
 
 </p>
 
 
-
 <form onSubmit={handleSubmit} className="space-y-6">
+
 
 <input
 name="name"
@@ -306,18 +321,17 @@ placeholder="Full Name"
 value={formData.name}
 onChange={handleChange}
 required
-className="w-full px-4 py-3 border border-gray-300 rounded focus:border-accent outline-none"
+className="w-full input-premium"
 />
 
 
 <input
 name="email"
-type="email"
 placeholder="Email Address"
 value={formData.email}
 onChange={handleChange}
 required
-className="w-full px-4 py-3 border border-gray-300 rounded focus:border-accent outline-none"
+className="w-full input-premium"
 />
 
 
@@ -327,7 +341,7 @@ placeholder="Company Name"
 value={formData.company}
 onChange={handleChange}
 required
-className="w-full px-4 py-3 border border-gray-300 rounded focus:border-accent outline-none"
+className="w-full input-premium"
 />
 
 
@@ -336,9 +350,8 @@ name="website"
 placeholder="Website or LinkedIn"
 value={formData.website}
 onChange={handleChange}
-className="w-full px-4 py-3 border border-gray-300 rounded focus:border-accent outline-none"
+className="w-full input-premium"
 />
-
 
 
 <input
@@ -346,21 +359,19 @@ name="industry"
 placeholder="Industry"
 value={formData.industry}
 onChange={handleChange}
-className="w-full px-4 py-3 border border-gray-300 rounded focus:border-accent outline-none"
+className="w-full input-premium"
 />
-
 
 
 <textarea
 name="message"
-rows={6}
-placeholder="Message"
+placeholder="Tell us about your brand"
 value={formData.message}
 onChange={handleChange}
+rows={6}
 required
-className="w-full px-4 py-3 border border-gray-300 rounded focus:border-accent outline-none resize-none"
+className="w-full input-premium resize-none"
 />
-
 
 
 <button className="cta-accent w-full">
@@ -369,17 +380,21 @@ Begin With Clarity
 
 </button>
 
+
 </form>
 
 
-
-<p className="text-sm text-gray-500 mt-6">
+<p className="text-sm text-gray-500 mt-6 text-center">
 
 We respond personally to every message.
+
 No automated responses.
+
 No generic follow-ups.
 
 </p>
+
+</div>
 
 </div>
 
@@ -389,9 +404,9 @@ No generic follow-ups.
 
 {/* DIRECT CONTACT */}
 
-<section className="section-spacing bg-white">
+<section className="section-premium bg-gray-50">
 
-<div className="container-wide text-center max-w-2xl">
+<div className="container-premium text-center reveal">
 
 <h2 className="text-4xl font-bold mb-8">
 
@@ -400,11 +415,9 @@ Prefer A Direct Conversation?
 </h2>
 
 
-<p className="text-lg text-gray-600 mb-10">
+<p className="text-premium mb-10">
 
 Some conversations are easier to start directly.
-
-If you prefer to speak with us instead of filling out a form, you can reach us here.
 
 </p>
 
@@ -414,9 +427,13 @@ If you prefer to speak with us instead of filling out a form, you can reach us h
 <p>
 
 Email:
-<span className="text-accent font-semibold ml-2">
+
+<a href="mailto:hello@eurekacraft.com"
+className="text-accent font-semibold ml-2">
+
 hello@eurekacraft.com
-</span>
+
+</a>
 
 </p>
 
@@ -424,8 +441,11 @@ hello@eurekacraft.com
 <p>
 
 Phone:
-<span className="text-accent font-semibold ml-2">
+
+<span className="ml-2 font-semibold">
+
 +91 XXXXX XXXXX
+
 </span>
 
 </p>
@@ -434,8 +454,11 @@ Phone:
 <p>
 
 LinkedIn:
-<span className="text-accent font-semibold ml-2">
+
+<span className="ml-2 font-semibold">
+
 Eureka Craft
+
 </span>
 
 </p>
@@ -443,7 +466,7 @@ Eureka Craft
 </div>
 
 
-<p className="mt-10 font-semibold">
+<p className="text-premium mt-10">
 
 Clarity often starts with a simple conversation.
 
@@ -457,9 +480,9 @@ Clarity often starts with a simple conversation.
 
 {/* TRUST STRIP */}
 
-<section className="section-spacing bg-gray-50">
+<section className="section-premium bg-black text-white">
 
-<div className="container-wide text-center max-w-3xl">
+<div className="container-premium text-center reveal">
 
 <h2 className="text-4xl font-bold mb-8">
 
@@ -468,27 +491,25 @@ Consulting Begins With Understanding
 </h2>
 
 
-<p className="text-lg text-gray-600 mb-6">
+<p className="text-gray-300 text-xl max-w-3xl mx-auto">
 
-Eureka Craft works with founders and leadership teams who want their brand to reflect the strength of their business.
-
-</p>
-
-
-<p className="text-lg text-gray-600 mb-6">
-
-Our work is not built on templates or assumptions.
-
-Every engagement begins with diagnosis — and grows through alignment.
+Eureka Craft works with founders and leadership teams who want
+their brand to reflect the strength of their business.
 
 </p>
 
 
-<p className="text-lg font-semibold">
+<p className="text-gray-400 mt-8">
 
-Because clarity is not created by chance.
+Every engagement begins with diagnosis —
+and grows through alignment.
 
-It is built intentionally.
+</p>
+
+
+<p className="text-accent mt-10 font-semibold">
+
+Because clarity is built intentionally.
 
 </p>
 
@@ -500,34 +521,37 @@ It is built intentionally.
 
 {/* FINAL CTA */}
 
-<section className="section-spacing bg-white">
+<section className="section-premium bg-white">
 
-<div className="container-wide text-center max-w-3xl">
+<div className="container-premium text-center reveal">
 
-<h2 className="text-4xl md:text-5xl font-bold mb-6">
+<h2 className="text-5xl font-bold mb-8">
 
 See What Your Brand Looks Like From The Outside
 
 </h2>
 
 
-<p className="text-lg text-gray-600 mb-10">
+<p className="text-premium mb-10 max-w-2xl mx-auto">
 
 Most leaders experience their business from the inside.
 
-The Clarity X-Ray™ shows you how your brand is experienced from the outside.
+The Clarity X-Ray™ shows you how your brand is experienced
+from the outside.
 
 And that perspective changes everything.
 
 </p>
 
 
-<Link href="/clarity-xray" className="cta-accent">
+<Link
+href="/clarity-xray"
+className="cta-accent inline-block"
+>
 
 Start The Clarity X-Ray™
 
 </Link>
-
 
 </div>
 
