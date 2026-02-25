@@ -34,7 +34,7 @@ Eureka Craft positions itself as a **clarity-first brand consulting studio**, no
 ### Colors
 - **Primary**: #000000 (Black)
 - **Secondary**: #FFFFFF (White)
-- **Accent**: #D4714D (Warm orange)
+- **Accent**: #D4714D (Warm yellow)
 - **Grays**: Full gray scale for hierarchy
 
 ### Typography
