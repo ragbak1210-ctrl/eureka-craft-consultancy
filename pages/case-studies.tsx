@@ -154,10 +154,6 @@ Lead quality improved.
 Ad dependency reduced.`
 },
 
-
-// Remaining 23 case studies included below ↓↓↓
-
-
 {
 title:"EdTech Authority Development",
 problem:`The EdTech company struggled with authority perception.
@@ -241,11 +237,7 @@ Distributors aligned.
 Brand recognition improved.
 Sales conversations shortened.
 Market trust improved.`
-},
-
-
-// CASES 9 → 28 CONTINUE EXACTLY SAME STRUCTURE
-
+},  
 
 {
 title:"D2C Skincare Brand Clarity Reset",
@@ -361,6 +353,8 @@ Client acquisition improved.
 Authority strengthened.`
 },
 
+
+
 {
 title:"Legal Advisory Trust Positioning",
 
@@ -388,6 +382,8 @@ Brand authority strengthened.
 Client acquisition improved.
 Decision cycles shortened.`
 },
+
+
 
 {
 title:"AI Startup Messaging Simplification",
@@ -417,6 +413,8 @@ Trust improved.
 Adoption accelerated.`
 },
 
+
+
 {
 title:"Franchise Brand Systemization",
 
@@ -444,6 +442,8 @@ Franchise growth improved.
 Customer trust increased.
 Operations aligned.`
 },
+
+
 
 {
 title:"Renewable Energy Brand Authority",
@@ -473,6 +473,8 @@ Visibility increased.
 Conversions improved.`
 },
 
+
+
 {
 title:"Boutique Hotel Storytelling Strategy",
 
@@ -500,6 +502,8 @@ Brand recall increased.
 Trust improved.
 Revenue improved.`
 },
+
+
 
 {
 title:"Diagnostics Brand Positioning",
@@ -529,6 +533,8 @@ Authority improved.
 Growth stabilized.`
 },
 
+
+
 {
 title:"HR Consulting Narrative Alignment",
 
@@ -556,6 +562,8 @@ Sales improved.
 Authority increased.
 Visibility improved.`
 },
+
+
 
 {
 title:"Export Business Digital Clarity",
@@ -585,6 +593,8 @@ Sales improved.
 Reach expanded.`
 },
 
+
+
 {
 title:"Recruitment Firm Authority Building",
 
@@ -612,6 +622,8 @@ Authority increased.
 Visibility improved.
 Conversions improved.`
 },
+
+
 
 {
 title:"Training Institute Positioning Clarity",
@@ -641,6 +653,8 @@ Visibility improved.
 Growth stabilized.`
 },
 
+
+
 {
 title:"B2B Services LinkedIn Strategy",
 
@@ -668,6 +682,8 @@ Visibility improved.
 Trust improved.
 Pipeline strengthened.`
 },
+
+
 
 {
 title:"Retail Brand Storytelling Alignment",
@@ -697,6 +713,8 @@ Consistency improved.
 Brand identity strengthened.`
 },
 
+
+
 {
 title:"Fintech Narrative Simplification",
 
@@ -723,7 +741,7 @@ Conversions improved.
 Trust improved.
 Ad performance improved.
 Growth accelerated.`
-}, 
+},
 
 {
 title:"Pharma Company Digital Trust Architecture",
@@ -753,6 +771,8 @@ Digital presence supported growth.
 Brand perception improved.`
 },
 
+
+
 {
 title:"Construction Firm Visibility & Positioning Upgrade",
 
@@ -781,6 +801,8 @@ Brand perception improved.
 Growth expanded.`
 },
 
+
+
 {
 title:"Startup Pre-Funding Positioning Strategy",
 
@@ -808,34 +830,54 @@ Early adopters understood faster.
 Brand perception improved.
 Funding readiness strengthened.`
 }  
-
+  
 ];
-
+  
 
 return(
 <>
 
 <Head>
 <title>Case Studies — Eureka Craft™</title>
-<meta name="description" content="Real examples of how Eureka Craft builds clarity and authority." />
+
+<meta
+name="description"
+content="Real examples of how Eureka Craft builds clarity and authority."
+/>
+
 </Head>
 
 
+{/* HERO */}
 
-<section className="section-spacing bg-white">
+<section className="hero-premium hero-glow">
 
-<div className="container-wide">
+<div className="container-premium">
 
-<h1 className="text-5xl md:text-6xl font-bold mb-6">
-Clarity in Action
+<div className="content-narrow reveal">
+
+<p className="text-accent font-semibold mb-6 tracking-wide">
+
+CLARITY IN ACTION
+
+</p>
+
+
+<h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-8">
+
+Real Clarity Transformations
+
 </h1>
 
-<div className="w-20 h-1 bg-accent mb-10"></div>
 
-<p className="text-xl text-gray-600 max-w-3xl">
-Real examples of how clarity-driven strategy transforms brand perception,
-authority, and growth.
+<p className="text-premium">
+
+Real examples of how clarity-driven strategy transforms
+positioning, authority, and growth.
+
 </p>
+
+</div>
 
 </div>
 
@@ -843,55 +885,116 @@ authority, and growth.
 
 
 
-<section className="section-spacing bg-gray-50">
+{/* INTRO STRIP */}
 
-<div className="container-wide max-w-5xl">
+<section className="section-premium bg-white">
+
+<div className="container-premium">
+
+<div className="content-narrow reveal">
+
+<h2 className="text-4xl font-bold mb-6">
+
+Strategy Before Execution
+
+</h2>
+
+<div className="section-divider mb-10"></div>
+
+
+<p className="text-premium mb-6">
+
+Each case study reflects how clarity transforms businesses
+before marketing begins.
+
+</p>
+
+
+<p className="text-premium">
+
+These transformations begin with diagnosis —
+not campaigns.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* ACCORDION */}
+
+<section className="section-premium bg-gray-50">
+
+<div className="container-premium max-w-5xl">
 
 <div className="space-y-6">
 
 {caseStudies.map((study,index)=>(
 
-<div key={index} className="bg-white border border-gray-300 rounded">
+<div
+key={index}
+
+className="card-premium reveal cursor-pointer hover-lift"
+>
+
 
 <button
 onClick={()=>toggle(index)}
-className="w-full text-left p-8 flex justify-between items-center"
+
+className="w-full text-left flex justify-between items-center p-10"
 >
 
-<h2 className="text-2xl font-bold">
-CASE STUDY {index+1} — {study.title}
+
+<div>
+
+<p className="text-sm text-gray-500 mb-2">
+
+CASE STUDY {index+1}
+
+</p>
+
+
+<h2 className="text-2xl font-semibold">
+
+{study.title}
+
 </h2>
 
-<span className="text-accent text-2xl">
-{openIndex===index?'-':'+'}
-</span>
+</div>
+
+
+<div className="text-accent text-3xl transition">
+
+{openIndex===index?"−":"+"}
+
+</div>
 
 </button>
 
 
 
-{openIndex===index && (
+{openIndex===index&&(
 
-<div className="px-8 pb-8 grid md:grid-cols-2 gap-8 text-gray-700">
+<div className="px-10 pb-10 grid md:grid-cols-2 gap-10 text-gray-700">
 
+<div className="space-y-8">
 
 <div>
 
-<h3 className="font-semibold mb-2 text-accent">
+<h3 className="text-accent font-semibold mb-3">
+
 Problem
-</h3>
 
-<p className="mb-6 whitespace-pre-line">
-{study.problem}
-</p>
-
-
-<h3 className="font-semibold mb-2 text-accent">
-Blindspot
 </h3>
 
 <p className="whitespace-pre-line">
-{study.blindspot}
+
+{study.problem}
+
 </p>
 
 </div>
@@ -900,25 +1003,61 @@ Blindspot
 
 <div>
 
-<h3 className="font-semibold mb-2 text-accent">
-Solution
-</h3>
+<h3 className="text-accent font-semibold mb-3">
 
-<p className="mb-6 whitespace-pre-line">
-{study.solution}
-</p>
+Blindspot
 
-
-<h3 className="font-semibold mb-2 text-accent">
-Outcome
 </h3>
 
 <p className="whitespace-pre-line">
-{study.outcome}
+
+{study.blindspot}
+
 </p>
 
 </div>
 
+</div>
+
+
+
+<div className="space-y-8">
+
+<div>
+
+<h3 className="text-accent font-semibold mb-3">
+
+Solution
+
+</h3>
+
+<p className="whitespace-pre-line">
+
+{study.solution}
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3 className="text-accent font-semibold mb-3">
+
+Outcome
+
+</h3>
+
+<p className="whitespace-pre-line font-medium">
+
+{study.outcome}
+
+</p>
+
+</div>
+
+</div>
 
 
 </div>
@@ -935,7 +1074,44 @@ Outcome
 
 </section>
 
+
+
+{/* FINAL CTA */}
+
+<section className="section-premium bg-white">
+
+<div className="container-premium text-center reveal">
+
+<h2 className="text-4xl font-bold mb-8">
+
+Start Your Own Clarity Transformation
+
+</h2>
+
+
+<p className="text-premium mb-10">
+
+Every clarity transformation begins with diagnosis.
+
+</p>
+
+
+<a
+href="/clarity-xray"
+className="cta-accent inline-block"
+>
+
+Start The Clarity X-Ray™
+
+</a>
+
+</div>
+
+</section>
+
+
 </>
+
 );
 
 }
