@@ -1,14 +1,16 @@
 import Head from 'next/head';
+import { useState } from 'react';
 
 export default function Insights() {
 
-const insights = [
+const [openIndex,setOpenIndex]=useState<number|null>(null)
+
+const insights=[
 
 {
 title:"Why Brand Positioning Fails (Even When the Product Is Strong)",
 
-content:`
-Most companies assume strong products naturally create strong brands. In reality, product excellence and brand clarity are two completely different disciplines.
+content:`Most companies assume strong products naturally create strong brands. In reality, product excellence and brand clarity are two completely different disciplines.
 
 Many businesses operate with vague positioning such as:
 
@@ -41,11 +43,7 @@ Advertising
 
 At Eureka Craft, brand positioning is developed through market context analysis, narrative mapping, and audience clarity.
 
-This ensures your brand becomes recognizable before it becomes visible.
-`,
-
-keywords:"brand positioning strategy, brand differentiation strategy, positioning consulting, brand clarity consulting"
-
+This ensures your brand becomes recognizable before it becomes visible.`
 },
 
 
@@ -53,8 +51,7 @@ keywords:"brand positioning strategy, brand differentiation strategy, positionin
 {
 title:"Narrative Strategy: The Missing Layer in Most Marketing Plans",
 
-content:`
-Most marketing plans define channels and budgets.
+content:`Most marketing plans define channels and budgets.
 
 Few define narrative.
 
@@ -82,11 +79,7 @@ This is why Eureka Craft builds narrative frameworks before execution begins.
 
 Because consistency is not about frequency.
 
-Consistency is about meaning.
-`,
-
-keywords:"brand narrative strategy, storytelling strategy, narrative marketing consulting, brand storytelling framework"
-
+Consistency is about meaning.`
 },
 
 
@@ -94,8 +87,7 @@ keywords:"brand narrative strategy, storytelling strategy, narrative marketing c
 {
 title:"Messaging Architecture: Why Good Ideas Still Sound Confusing",
 
-content:`
-Many businesses have intelligent leaders and strong ideas.
+content:`Many businesses have intelligent leaders and strong ideas.
 
 Yet their messaging feels scattered.
 
@@ -124,11 +116,7 @@ Prospects understand faster.
 Trust builds earlier.
 Decisions happen sooner.
 
-Messaging clarity is one of the fastest ways to improve conversion rates without increasing marketing spend.
-`,
-
-keywords:"brand messaging framework, messaging architecture consulting, value proposition development"
-
+Messaging clarity is one of the fastest ways to improve conversion rates without increasing marketing spend.`
 },
 
 
@@ -136,8 +124,7 @@ keywords:"brand messaging framework, messaging architecture consulting, value pr
 {
 title:"Founder Branding: Why Trust Starts With People",
 
-content:`
-In high-trust industries, brands rarely lead.
+content:`In high-trust industries, brands rarely lead.
 
 People do.
 
@@ -161,11 +148,7 @@ Improves inbound opportunities
 
 LinkedIn has become the primary platform for founder-driven trust.
 
-Companies with active founders consistently outperform companies with silent leadership.
-`,
-
-keywords:"founder branding strategy, linkedin thought leadership, founder positioning consulting"
-
+Companies with active founders consistently outperform companies with silent leadership.`
 },
 
 
@@ -173,8 +156,7 @@ keywords:"founder branding strategy, linkedin thought leadership, founder positi
 {
 title:"Content Systems vs Random Posting",
 
-content:`
-Most businesses treat content as a monthly activity.
+content:`Most businesses treat content as a monthly activity.
 
 Strong brands treat content as infrastructure.
 
@@ -198,11 +180,7 @@ Why it matters
 
 Eureka Craft designs structured content ecosystems that align with positioning and narrative clarity.
 
-Because content works best when it behaves like a system, not a calendar.
-`,
-
-keywords:"content systems strategy, content marketing framework, narrative content strategy"
-
+Because content works best when it behaves like a system, not a calendar.`
 },
 
 
@@ -210,8 +188,7 @@ keywords:"content systems strategy, content marketing framework, narrative conte
 {
 title:"LinkedIn Strategy: Visibility Without Noise",
 
-content:`
-LinkedIn has become the primary platform for authority building.
+content:`LinkedIn has become the primary platform for authority building.
 
 Yet most companies use LinkedIn incorrectly.
 
@@ -232,11 +209,7 @@ LinkedIn success is not frequency.
 
 It is relevance.
 
-When done correctly, LinkedIn becomes a long-term inbound lead engine.
-`,
-
-keywords:"linkedin content strategy, linkedin consulting, thought leadership linkedin"
-
+When done correctly, LinkedIn becomes a long-term inbound lead engine.`
 },
 
 
@@ -244,8 +217,7 @@ keywords:"linkedin content strategy, linkedin consulting, thought leadership lin
 {
 title:"Digital Marketing Alignment: Why Channels Don't Work Together",
 
-content:`
-Many businesses run:
+content:`Many businesses run:
 
 Google Ads
 Social Media
@@ -266,11 +238,7 @@ Digital alignment ensures:
 • Clear conversion paths
 • Consistent messaging
 
-Marketing becomes stronger when channels reinforce each other instead of competing for attention.
-`,
-
-keywords:"digital marketing strategy consulting, marketing alignment consulting"
-
+Marketing becomes stronger when channels reinforce each other instead of competing for attention.`
 },
 
 
@@ -278,8 +246,7 @@ keywords:"digital marketing strategy consulting, marketing alignment consulting"
 {
 title:"Brand Communication Frameworks: Consistency Builds Trust",
 
-content:`
-Brand communication is not just design.
+content:`Brand communication is not just design.
 
 It includes:
 
@@ -300,11 +267,7 @@ Familiarity builds trust.
 
 Trust builds conversion.
 
-Brand communication frameworks allow brands to scale without losing identity.
-`,
-
-keywords:"brand communication strategy, brand voice framework"
-
+Brand communication frameworks allow brands to scale without losing identity.`
 },
 
 
@@ -312,8 +275,7 @@ keywords:"brand communication strategy, brand voice framework"
 {
 title:"Blindspot Analysis: The Hidden Leaks in Brand Strategy",
 
-content:`
-Many marketing problems originate from unseen causes.
+content:`Many marketing problems originate from unseen causes.
 
 Blindspots include:
 
@@ -335,11 +297,7 @@ The Clarity X-Ray™ reveals:
 
 Clarity removes friction.
 
-Friction slows growth.
-`,
-
-keywords:"brand audit consulting, brand blindspot analysis"
-
+Friction slows growth.`
 },
 
 
@@ -347,8 +305,7 @@ keywords:"brand audit consulting, brand blindspot analysis"
 {
 title:"Trust Signals: Why People Hesitate to Buy",
 
-content:`
-Trust is rarely lost through major mistakes.
+content:`Trust is rarely lost through major mistakes.
 
 It is lost through small uncertainties.
 
@@ -367,11 +324,7 @@ Conversion increases.
 
 Authority is not claimed.
 
-Authority is demonstrated.
-`,
-
-keywords:"trust building marketing, brand authority strategy"
-
+Authority is demonstrated.`
 },
 
 
@@ -379,8 +332,7 @@ keywords:"trust building marketing, brand authority strategy"
 {
 title:"Clarity as a Growth Strategy",
 
-content:`
-Clarity is often treated as branding work.
+content:`Clarity is often treated as branding work.
 
 In reality, clarity is growth infrastructure.
 
@@ -403,54 +355,49 @@ It is structural.
 
 This is why Eureka Craft builds clarity before growth.
 
-Because growth built on confusion eventually collapses.
-`,
-
-keywords:"brand clarity consulting, growth strategy consulting"
-
+Because growth built on confusion eventually collapses.`
 }
 
-];
+]
 
 
-return (
 
+return(
 <>
 
 <Head>
 <title>Insights — Eureka Craft™</title>
-<meta name="description" content="Clarity-first thinking on brand strategy, narrative alignment and growth."/>
+<meta name="description" content="Clarity-first thinking on brand strategy, narrative alignment and visibility."/>
 </Head>
-
 
 
 {/* HERO */}
 
 <section className="section-spacing bg-white">
 
-<div className="container-wide">
+<div className="container-wide max-w-3xl">
 
-<h1 className="text-6xl font-bold mb-6">
-
+<h1 className="text-5xl md:text-6xl font-bold mb-6">
 Where Strategy Meets Understanding
-
 </h1>
 
-<div className="w-24 h-1 bg-accent mb-10"></div>
-
-<p className="text-xl text-gray-600 max-w-3xl mb-6">
-
+<p className="text-xl text-gray-600 mb-8">
 Most brands publish content. Few brands build understanding.
-
 </p>
 
-<p className="text-lg text-gray-600 max-w-3xl">
+
+<p className="text-lg text-gray-600 mb-6">
 
 The Insights section is where Eureka Craft shares clarity-first thinking about brand strategy, narrative alignment, and digital visibility.
 
 These insights help founders and leadership teams understand why marketing works — and why it often doesn't.
 
-Each insight reflects the same principles we apply inside the Clarity X-Ray™ and consulting engagements.
+</p>
+
+
+<p className="text-lg text-gray-600">
+
+Each insight reflects the same principles applied inside The Clarity X-Ray™ and our consulting engagements.
 
 </p>
 
@@ -460,74 +407,68 @@ Each insight reflects the same principles we apply inside the Clarity X-Ray™ a
 
 
 
-{/* ARTICLES */}
+{/* ACCORDION */}
 
 <section className="section-spacing bg-gray-50">
 
-<div className="container-wide">
+<div className="container-wide max-w-4xl">
 
-
-
-<div className="max-w-4xl mx-auto space-y-32">
 
 {insights.map((item,index)=>(
-<div key={index}>
+<div
+key={index}
+className="mb-6 bg-white border border-gray-300 rounded"
+>
 
 
-<div className="mb-8">
+<button
+onClick={()=>setOpenIndex(openIndex===index?null:index)}
+className="w-full text-left p-8 flex justify-between items-center"
+>
 
-<div className="text-accent font-semibold mb-3">
-
-Insight {index+1}
-
-</div>
-
-<h2 className="text-4xl font-bold mb-6">
+<h2 className="text-2xl font-bold">
 
 {item.title}
 
 </h2>
 
-<div className="w-16 h-1 bg-accent mb-10"></div>
 
-</div>
+<span className="text-accent text-2xl">
+
+{openIndex===index?"−":"+"}
+
+</span>
+
+
+</button>
 
 
 
-<div className="text-lg text-gray-700 leading-8 whitespace-pre-line mb-8">
+{openIndex===index&&(
+
+<div className="px-8 pb-8">
+
+<p className="text-gray-700 whitespace-pre-line leading-relaxed">
 
 {item.content}
 
-</div>
-
-
-
-<div className="border-t border-gray-300 pt-6">
-
-<div className="text-sm text-gray-500">
-
-Keywords: {item.keywords}
+</p>
 
 </div>
 
-</div>
-
-
+)}
 
 </div>
 ))}
 
 
-</div>
 
 </div>
 
 </section>
 
 
-
 </>
-
-);
+)
 
 }
