@@ -290,3 +290,265 @@ color:var(--brand-yellow);
 color:var(--brand-black);
 
 }
+
+
+/* ===================================== */
+/* PREMIUM CONSULTING DESIGN SYSTEM */
+/* ===================================== */
+
+
+/* ============================= */
+/* PREMIUM SECTION SPACING */
+/* ============================= */
+
+.section-premium {
+
+padding-top:120px;
+padding-bottom:120px;
+
+}
+
+
+.section-premium-sm{
+
+padding-top:80px;
+padding-bottom:80px;
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM CONTAINERS */
+/* ============================= */
+
+.container-premium{
+
+max-width:1100px;
+margin:0 auto;
+padding-left:24px;
+padding-right:24px;
+
+}
+
+
+.content-narrow{
+
+max-width:780px;
+margin:0 auto;
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM HERO */
+/* ============================= */
+
+.hero-premium{
+
+padding-top:160px;
+padding-bottom:140px;
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM TYPOGRAPHY */
+/* ============================= */
+
+.text-premium{
+
+font-size:18px;
+line-height:1.9;
+color:#555;
+
+}
+
+
+.heading-premium{
+
+letter-spacing:-0.02em;
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM DIVIDER */
+/* ============================= */
+
+.section-divider{
+
+width:60px;
+height:4px;
+background:var(--brand-yellow);
+margin-top:20px;
+margin-bottom:30px;
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM CARDS */
+/* ============================= */
+
+.card-premium{
+
+padding:48px;
+border-radius:6px;
+background:white;
+border:1px solid #eee;
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM NAVIGATION */
+/* ============================= */
+
+/* Sticky smooth */
+
+nav{
+
+transition:all .25s ease;
+
+}
+
+
+/* Active yellow underline */
+
+.nav-link{
+
+position:relative;
+padding-bottom:6px;
+
+}
+
+
+.nav-link::after{
+
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+
+width:0%;
+height:3px;
+
+background:var(--brand-yellow);
+
+transition:0.3s ease;
+
+}
+
+
+.nav-link:hover::after{
+
+width:100%;
+
+}
+
+
+.nav-link.active::after{
+
+width:100%;
+
+}
+
+
+/* ============================= */
+/* PREMIUM BUTTON IMPROVEMENTS */
+/* ============================= */
+
+.cta-primary{
+
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+}
+
+
+.cta-primary:hover{
+
+transform:translateY(-1px);
+
+box-shadow:0 10px 28px rgba(0,0,0,0.12);
+
+}
+
+
+
+.cta-secondary:hover{
+
+transform:translateY(-1px);
+
+}
+
+
+
+.cta-accent:hover{
+
+transform:translateY(-1px);
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM INPUTS */
+/* ============================= */
+
+input,textarea{
+
+transition:0.2s ease;
+
+}
+
+
+input:focus,
+textarea:focus{
+
+border-color:var(--brand-yellow);
+outline:none;
+
+box-shadow:0 0 0 3px rgba(255,214,0,0.2);
+
+}
+
+
+
+/* ============================= */
+/* PREMIUM SCROLL */
+/* ============================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+background:#f5f5f5;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+background:#ddd;
+
+border-radius:5px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#bbb;
+
+}
