@@ -552,3 +552,348 @@ border-radius:5px;
 background:#bbb;
 
 }
+
+/* ============================
+PREMIUM MOTION SYSTEM
+Eureka Craft
+============================ */
+
+
+/* Smooth scrolling */
+
+html {
+scroll-behavior: smooth;
+}
+
+
+/* Global transitions */
+
+* {
+transition:
+color .25s ease,
+background-color .25s ease,
+border-color .25s ease,
+transform .25s ease,
+box-shadow .25s ease;
+}
+
+
+
+/* ============================
+SUBTLE YELLOW MOTION ACCENTS
+============================ */
+
+
+/* Yellow accent underline animation */
+
+.accent-underline {
+position: relative;
+display: inline-block;
+}
+
+.accent-underline::after {
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:2px;
+background:#facc15;
+transition:.35s ease;
+}
+
+.accent-underline:hover::after {
+width:100%;
+}
+
+
+
+/* Section Divider Animation */
+
+.section-divider {
+width:80px;
+height:3px;
+background:#facc15;
+margin-top:20px;
+margin-bottom:20px;
+transform:scaleX(.6);
+transform-origin:left;
+transition:.4s ease;
+}
+
+.section-divider:hover{
+transform:scaleX(1);
+}
+
+
+
+/* Yellow glow on hover */
+
+.glow-accent:hover{
+
+box-shadow:
+0 0 0 1px #facc15,
+0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ============================
+PREMIUM CARD ANIMATION
+============================ */
+
+.card-premium{
+
+padding:40px;
+border-radius:14px;
+background:white;
+
+transition:.35s ease;
+
+}
+
+
+.card-premium:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.08);
+
+border-color:#facc15;
+
+}
+
+
+
+/* ============================
+BUTTON MICRO INTERACTIONS
+============================ */
+
+
+.cta-accent{
+
+background:#facc15;
+color:black;
+padding:14px 26px;
+border-radius:8px;
+font-weight:600;
+
+transition:.25s ease;
+
+}
+
+
+.cta-accent:hover{
+
+background:#eab308;
+
+transform:translateY(-2px);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+.cta-secondary{
+
+border:1px solid #ddd;
+padding:14px 26px;
+border-radius:8px;
+
+transition:.25s ease;
+
+}
+
+
+.cta-secondary:hover{
+
+border-color:#facc15;
+
+transform:translateY(-2px);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ============================
+NAVIGATION ANIMATION
+============================ */
+
+
+/* Smooth sticky shadow */
+
+nav{
+
+transition:box-shadow .3s ease;
+
+}
+
+nav:hover{
+
+box-shadow:
+0 6px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ============================
+SECTION TRANSITIONS
+============================ */
+
+
+.section-premium{
+
+padding-top:120px;
+padding-bottom:120px;
+
+animation:fadeUp .8s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0px);
+
+}
+
+}
+
+
+
+
+/* ============================
+HERO PREMIUM MOTION
+============================ */
+
+.hero-premium{
+
+padding-top:140px;
+padding-bottom:140px;
+
+animation:heroFade 1s ease;
+
+}
+
+
+@keyframes heroFade{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0px);
+
+}
+
+}
+
+
+
+/* ============================
+TEXT PREMIUM FEEL
+============================ */
+
+.text-premium{
+
+font-size:20px;
+line-height:1.7;
+
+}
+
+
+
+/* ============================
+CONTAINER PREMIUM
+============================ */
+
+.container-premium{
+
+max-width:1400px;
+margin:auto;
+padding-left:60px;
+padding-right:60px;
+
+}
+
+
+
+/* ============================
+CONTENT WIDTH CONTROL
+============================ */
+
+.content-narrow{
+
+max-width:680px;
+
+}
+
+
+
+/* ============================
+LUXURY HOVER FOR LINKS
+============================ */
+
+
+a{
+
+transition:.25s ease;
+
+}
+
+
+a:hover{
+
+opacity:.85;
+
+}
+
+
+
+/* ============================
+PREMIUM INPUT ANIMATION
+============================ */
+
+
+input,
+textarea{
+
+transition:.25s ease;
+
+}
+
+
+input:focus,
+textarea:focus{
+
+outline:none;
+
+border-color:#facc15;
+
+box-shadow:
+0 0 0 1px #facc15;
+
+}
