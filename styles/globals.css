@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* ============================= */
 /* BRAND COLOR SYSTEM */
 /* ============================= */
@@ -9,147 +10,283 @@
 :root {
 
   /* Core Brand Colors */
+
   --brand-yellow: #FFD600;
   --brand-black: #000000;
   --brand-white: #FFFFFF;
 
   /* Text */
+
   --text-primary: #000000;
   --text-secondary: #555555;
 
   /* Backgrounds */
+
   --bg-primary: #FFFFFF;
   --bg-dark: #000000;
   --bg-accent: #FFD600;
 
 }
 
+
+
 /* ============================= */
 /* BASE RESET */
 /* ============================= */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
-}
+
 
 /* ============================= */
-/* TYPOGRAPHY */
+/* GLOBAL TYPOGRAPHY */
 /* ============================= */
 
-a {
-  color: inherit;
-  text-decoration: none;
+body{
+
+/* Body Font */
+
+font-family:'Manrope',sans-serif;
+
+color:var(--text-primary);
+
+background-color:var(--bg-primary);
+
+-webkit-font-smoothing:antialiased;
+
+-moz-osx-font-smoothing:grayscale;
+
 }
 
-button {
-  cursor: pointer;
+
+
+/* ============================= */
+/* TYPOGRAPHY SYSTEM */
+/* ============================= */
+
+
+/* Headings — Primary Font */
+
+h1,h2,h3,h4,h5,h6{
+
+font-family:'Plus Jakarta Sans',sans-serif;
+
+font-weight:600;
+
+line-height:1.2;
+
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.2;
+
+
+/* Paragraphs */
+
+p,li{
+
+font-family:'Manrope',sans-serif;
+
+line-height:1.7;
+
+font-size:1rem;
+
 }
 
-h1 {
-  font-size: 3.5rem;
-  letter-spacing: -0.02em;
+
+
+/* UI Text */
+
+small,button,input,textarea,label{
+
+font-family:'Inter',sans-serif;
+
 }
 
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: -0.01em;
+
+
+/* ============================= */
+/* HEADING SIZES */
+/* ============================= */
+
+
+h1{
+
+font-size:3.5rem;
+
+letter-spacing:-0.02em;
+
 }
 
-h3 {
-  font-size: 1.875rem;
+
+h2{
+
+font-size:2.5rem;
+
+letter-spacing:-0.01em;
+
 }
 
-h4 {
-  font-size: 1.5rem;
+
+h3{
+
+font-size:1.875rem;
+
 }
 
-p {
-  line-height: 1.6;
-  font-size: 1rem;
+
+h4{
+
+font-size:1.5rem;
+
 }
+
+
+
+/* ============================= */
+/* LINKS */
+/* ============================= */
+
+a{
+
+color:inherit;
+
+text-decoration:none;
+
+}
+
+
+
+button{
+
+cursor:pointer;
+
+}
+
+
 
 /* ============================= */
 /* BUTTON SYSTEM */
 /* ============================= */
 
-/* Primary = Yellow */
-.cta-primary {
-  @apply px-6 py-3 rounded font-semibold transition;
-  background-color: var(--brand-yellow);
-  color: black;
+
+/* Primary Button = Yellow */
+
+.cta-primary{
+
+@apply px-6 py-3 rounded font-semibold transition;
+
+background-color:var(--brand-yellow);
+
+color:black;
+
 }
 
-.cta-primary:hover {
-  background-color: #e6c200;
+
+.cta-primary:hover{
+
+background-color:#e6c200;
+
 }
 
-/* Secondary = Black */
-.cta-secondary {
-  @apply px-6 py-3 rounded font-semibold transition;
-  background-color: var(--brand-black);
-  color: white;
+
+
+/* Secondary Button = Black */
+
+.cta-secondary{
+
+@apply px-6 py-3 rounded font-semibold transition;
+
+background-color:var(--brand-black);
+
+color:white;
+
 }
 
-.cta-secondary:hover {
-  background-color: #222222;
+
+.cta-secondary:hover{
+
+background-color:#222222;
+
 }
+
+
 
 /* Accent Outline */
-.cta-accent {
-  @apply px-6 py-3 rounded font-semibold transition border;
-  border-color: var(--brand-yellow);
-  color: black;
+
+.cta-accent{
+
+@apply px-6 py-3 rounded font-semibold transition border;
+
+border-color:var(--brand-yellow);
+
+color:black;
+
 }
 
-.cta-accent:hover {
-  background-color: var(--brand-yellow);
+
+.cta-accent:hover{
+
+background-color:var(--brand-yellow);
+
 }
+
+
 
 /* ============================= */
 /* LAYOUT */
 /* ============================= */
 
-.section-spacing {
-  @apply py-24 px-8 md:px-12 lg:px-20;
+
+.section-spacing{
+
+@apply py-24 px-8 md:px-12 lg:px-20;
+
 }
 
-.container-wide {
-  @apply max-w-7xl mx-auto;
+
+.container-wide{
+
+@apply max-w-7xl mx-auto;
+
 }
+
+
 
 /* ============================= */
 /* UTILITY BRAND CLASSES */
 /* ============================= */
 
-.bg-brand-yellow {
-  background-color: var(--brand-yellow);
+
+.bg-brand-yellow{
+
+background-color:var(--brand-yellow);
+
 }
 
-.bg-brand-black {
-  background-color: var(--brand-black);
+
+.bg-brand-black{
+
+background-color:var(--brand-black);
+
 }
 
-.text-brand-yellow {
-  color: var(--brand-yellow);
+
+.text-brand-yellow{
+
+color:var(--brand-yellow);
+
 }
 
-.text-brand-black {
-  color: var(--brand-black);
+
+.text-brand-black{
+
+color:var(--brand-black);
+
 }
