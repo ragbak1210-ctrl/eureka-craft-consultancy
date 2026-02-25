@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #111827;
+  background-color: #FFFFFF;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.cta-primary {
+  @apply px-6 py-3 bg-black text-white rounded font-semibold hover:bg-gray-800 transition;
+}
+
+.cta-secondary {
+  @apply px-6 py-3 border border-black text-black rounded font-semibold hover:bg-black hover:text-white transition;
+}
+
+.cta-accent {
+  @apply px-6 py-3 bg-accent text-white rounded font-semibold hover:opacity-90 transition;
+}
+
+.section-spacing {
+  @apply py-24 px-8 md:px-12 lg:px-20;
+}
+
+.container-wide {
+  @apply max-w-7xl mx-auto;
+}
