@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================= */
+/* BRAND COLOR SYSTEM */
+/* ============================= */
+
+:root {
+
+  /* Core Brand Colors */
+  --brand-yellow: #FFD600;
+  --brand-black: #000000;
+  --brand-white: #FFFFFF;
+
+  /* Text */
+  --text-primary: #000000;
+  --text-secondary: #555555;
+
+  /* Backgrounds */
+  --bg-primary: #FFFFFF;
+  --bg-dark: #000000;
+  --bg-accent: #FFD600;
+
+}
+
+/* ============================= */
+/* BASE RESET */
+/* ============================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +40,13 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  color: #111827;
-  background-color: #FFFFFF;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
+
+/* ============================= */
+/* TYPOGRAPHY */
+/* ============================= */
 
 a {
   color: inherit;
@@ -55,17 +85,46 @@ p {
   font-size: 1rem;
 }
 
+/* ============================= */
+/* BUTTON SYSTEM */
+/* ============================= */
+
+/* Primary = Yellow */
 .cta-primary {
-  @apply px-6 py-3 bg-black text-white rounded font-semibold hover:bg-gray-800 transition;
+  @apply px-6 py-3 rounded font-semibold transition;
+  background-color: var(--brand-yellow);
+  color: black;
 }
 
+.cta-primary:hover {
+  background-color: #e6c200;
+}
+
+/* Secondary = Black */
 .cta-secondary {
-  @apply px-6 py-3 border border-black text-black rounded font-semibold hover:bg-black hover:text-white transition;
+  @apply px-6 py-3 rounded font-semibold transition;
+  background-color: var(--brand-black);
+  color: white;
 }
 
-.cta-accent {
-  @apply px-6 py-3 bg-accent text-white rounded font-semibold hover:opacity-90 transition;
+.cta-secondary:hover {
+  background-color: #222222;
 }
+
+/* Accent Outline */
+.cta-accent {
+  @apply px-6 py-3 rounded font-semibold transition border;
+  border-color: var(--brand-yellow);
+  color: black;
+}
+
+.cta-accent:hover {
+  background-color: var(--brand-yellow);
+}
+
+/* ============================= */
+/* LAYOUT */
+/* ============================= */
 
 .section-spacing {
   @apply py-24 px-8 md:px-12 lg:px-20;
@@ -73,4 +132,24 @@ p {
 
 .container-wide {
   @apply max-w-7xl mx-auto;
+}
+
+/* ============================= */
+/* UTILITY BRAND CLASSES */
+/* ============================= */
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+
+.bg-brand-black {
+  background-color: var(--brand-black);
+}
+
+.text-brand-yellow {
+  color: var(--brand-yellow);
+}
+
+.text-brand-black {
+  color: var(--brand-black);
 }
