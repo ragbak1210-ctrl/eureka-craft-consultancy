@@ -46,8 +46,6 @@ At Eureka Craft, brand positioning is developed through market context analysis,
 This ensures your brand becomes recognizable before it becomes visible.`
 },
 
-
-
 {
 title:"Narrative Strategy: The Missing Layer in Most Marketing Plans",
 
@@ -81,8 +79,6 @@ Because consistency is not about frequency.
 
 Consistency is about meaning.`
 },
-
-
 
 {
 title:"Messaging Architecture: Why Good Ideas Still Sound Confusing",
@@ -119,8 +115,6 @@ Decisions happen sooner.
 Messaging clarity is one of the fastest ways to improve conversion rates without increasing marketing spend.`
 },
 
-
-
 {
 title:"Founder Branding: Why Trust Starts With People",
 
@@ -150,8 +144,6 @@ LinkedIn has become the primary platform for founder-driven trust.
 
 Companies with active founders consistently outperform companies with silent leadership.`
 },
-
-
 
 {
 title:"Content Systems vs Random Posting",
@@ -183,8 +175,6 @@ Eureka Craft designs structured content ecosystems that align with positioning a
 Because content works best when it behaves like a system, not a calendar.`
 },
 
-
-
 {
 title:"LinkedIn Strategy: Visibility Without Noise",
 
@@ -211,8 +201,6 @@ It is relevance.
 
 When done correctly, LinkedIn becomes a long-term inbound lead engine.`
 },
-
-
 
 {
 title:"Digital Marketing Alignment: Why Channels Don't Work Together",
@@ -241,8 +229,6 @@ Digital alignment ensures:
 Marketing becomes stronger when channels reinforce each other instead of competing for attention.`
 },
 
-
-
 {
 title:"Brand Communication Frameworks: Consistency Builds Trust",
 
@@ -269,8 +255,6 @@ Trust builds conversion.
 
 Brand communication frameworks allow brands to scale without losing identity.`
 },
-
-
 
 {
 title:"Blindspot Analysis: The Hidden Leaks in Brand Strategy",
@@ -300,8 +284,6 @@ Clarity removes friction.
 Friction slows growth.`
 },
 
-
-
 {
 title:"Trust Signals: Why People Hesitate to Buy",
 
@@ -326,8 +308,6 @@ Authority is not claimed.
 
 Authority is demonstrated.`
 },
-
-
 
 {
 title:"Clarity as a Growth Strategy",
@@ -356,10 +336,10 @@ It is structural.
 This is why Eureka Craft builds clarity before growth.
 
 Because growth built on confusion eventually collapses.`
+
 }
 
 ]
-
 
 
 return(
@@ -371,35 +351,53 @@ return(
 </Head>
 
 
+
 {/* HERO */}
 
-<section className="section-spacing bg-white">
+<section className="hero-premium hero-glow">
 
-<div className="container-wide max-w-3xl">
+<div className="container-premium">
 
-<h1 className="text-5xl md:text-6xl font-bold mb-6">
-Where Strategy Meets Understanding
+<div className="content-narrow reveal">
+
+<p className="text-accent font-semibold mb-6 tracking-wide">
+
+WHERE STRATEGY MEETS UNDERSTANDING
+
+</p>
+
+
+<h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-8">
+
+Clarity Insights
+
 </h1>
 
-<p className="text-xl text-gray-600 mb-8">
-Most brands publish content. Few brands build understanding.
-</p>
 
+<p className="text-premium mb-10">
 
-<p className="text-lg text-gray-600 mb-6">
-
-The Insights section is where Eureka Craft shares clarity-first thinking about brand strategy, narrative alignment, and digital visibility.
-
-These insights help founders and leadership teams understand why marketing works — and why it often doesn't.
+Most brands publish content.
+Few brands build understanding.
 
 </p>
 
 
-<p className="text-lg text-gray-600">
+<p className="text-premium mb-6">
 
-Each insight reflects the same principles applied inside The Clarity X-Ray™ and our consulting engagements.
+The Insights section is where Eureka Craft shares clarity-first thinking
+about brand strategy, narrative alignment, and digital visibility.
 
 </p>
+
+
+<p className="text-premium">
+
+Each insight reflects the same principles applied inside
+The Clarity X-Ray™ and our consulting engagements.
+
+</p>
+
+</div>
 
 </div>
 
@@ -409,31 +407,32 @@ Each insight reflects the same principles applied inside The Clarity X-Ray™ an
 
 {/* ACCORDION */}
 
-<section className="section-spacing bg-gray-50">
+<section className="section-premium bg-gray-50">
 
-<div className="container-wide max-w-4xl">
+<div className="container-premium max-w-4xl">
 
+<div className="space-y-6">
 
 {insights.map((item,index)=>(
 <div
 key={index}
-className="mb-6 bg-white border border-gray-300 rounded"
+className="card-premium reveal cursor-pointer"
 >
 
 
 <button
 onClick={()=>setOpenIndex(openIndex===index?null:index)}
-className="w-full text-left p-8 flex justify-between items-center"
+className="w-full text-left p-10 flex justify-between items-center"
 >
 
-<h2 className="text-2xl font-bold">
+<h2 className="text-2xl font-semibold">
 
-{item.title}
+INSIGHT {index+1} — {item.title}
 
 </h2>
 
 
-<span className="text-accent text-2xl">
+<span className="text-accent text-3xl font-light">
 
 {openIndex===index?"−":"+"}
 
@@ -446,7 +445,7 @@ className="w-full text-left p-8 flex justify-between items-center"
 
 {openIndex===index&&(
 
-<div className="px-8 pb-8">
+<div className="px-10 pb-10 border-t border-gray-200">
 
 <p className="text-gray-700 whitespace-pre-line leading-relaxed">
 
@@ -462,6 +461,43 @@ className="w-full text-left p-8 flex justify-between items-center"
 ))}
 
 
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* FINAL CTA */}
+
+<section className="section-premium bg-white">
+
+<div className="container-premium text-center reveal">
+
+<h2 className="text-4xl font-bold mb-8">
+
+Clarity Begins With Diagnosis
+
+</h2>
+
+
+<p className="text-premium mb-10">
+
+See what your brand looks like from the outside.
+
+</p>
+
+
+<a
+href="/clarity-xray"
+className="cta-accent inline-block"
+>
+
+Start The Clarity X-Ray™
+
+</a>
 
 </div>
 
