@@ -4,475 +4,449 @@ import { useState } from 'react';
 
 export default function ClarityXRay() {
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    website: '',
-  });
+const [formData,setFormData]=useState({
+name:'',
+email:'',
+company:'',
+website:'',
+});
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
+setFormData({...formData,[e.target.name]:e.target.value});
+};
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you! We'll be in touch shortly.");
-    setFormData({ name: '', email: '', company: '', website: '' });
-  };
+const handleSubmit=(e:React.FormEvent)=>{
+e.preventDefault();
+alert("Thank you! We'll be in touch shortly.");
+setFormData({name:'',email:'',company:'',website:''});
+};
 
 
-  return (
-    <>
-      <Head>
-        <title>The Clarity X-Ray™ — Eureka Craft</title>
-        <meta
-          name="description"
-          content="The Clarity X-Ray™ is Eureka Craft’s proprietary blindspot audit designed to diagnose positioning, messaging, and narrative gaps."
-        />
-      </Head>
+return(
 
+<>
 
-      {/* HERO */}
+<Head>
 
-      <section className="section-spacing bg-white">
+<title>The Clarity X-Ray™ — Eureka Craft</title>
 
-        <div className="container-wide max-w-4xl">
+<meta
+name="description"
+content="The Clarity X-Ray™ is Eureka Craft’s proprietary blindspot audit designed to diagnose positioning, messaging, and narrative gaps."
+/>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Most Brands Don't Need More Marketing.
-            <br/>
-            They Need Better Diagnosis.
-          </h1>
+</Head>
 
-          <p className="text-2xl text-accent font-semibold mb-8">
-            Because What You Can't See Is What's Holding You Back
-          </p>
 
-          <p className="text-lg text-gray-600 mb-6">
-            The Clarity X-Ray™ is Eureka Craft’s proprietary blindspot audit designed
-            to reveal the hidden gaps between your business strength and your market perception.
-          </p>
 
-          <p className="text-lg text-gray-600 mb-10">
-            Before strategies. Before campaigns. Before content.
-            <br/>
-            <strong>We diagnose.</strong>
-          </p>
+{/* HERO */}
 
+<section className="hero-premium bg-premium hero-glow">
 
-          <div className="flex gap-4 flex-wrap">
+<div className="container-premium">
 
-            <a href="#pricing" className="cta-accent">
-              Discover Your Blindspots
-            </a>
+<div className="content-narrow reveal">
 
-            <a href="#analysis" className="cta-secondary">
-              See What We Analyze
-            </a>
+<p className="text-accent font-semibold mb-6 tracking-wide">
 
-          </div>
+THE CLARITY X-RAY™
 
-        </div>
+</p>
 
-      </section>
 
+<h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-6">
 
+Most Brands Don't Need More Marketing.
 
-      {/* WHY AUDITS FAIL */}
+</h1>
 
-      <section className="section-spacing bg-gray-50">
 
-        <div className="container-wide max-w-3xl">
+<h1 className="text-6xl md:text-7xl font-bold text-accent heading-luxury mb-10">
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-10">
-            Why Traditional Audits Fall Short
-          </h2>
+They Need Better Diagnosis.
 
+</h1>
 
-          <div className="space-y-6 text-lg text-gray-700">
 
-            <p>
-              Most brand audits focus on what is easy to measure.
-            </p>
+<p className="text-premium mb-8">
 
-            <ul className="space-y-2">
+The Clarity X-Ray™ is Eureka Craft’s proprietary blindspot audit designed
+to reveal the hidden gaps between your business strength and your market perception.
 
-              <li>• Engagement rates</li>
-              <li>• Post frequency</li>
-              <li>• Website traffic</li>
-              <li>• Follower growth</li>
+</p>
 
-            </ul>
 
+<p className="text-premium mb-10">
 
-            <p>
-              These metrics tell you what happened.
-            </p>
+Before strategies. Before campaigns. Before content.
 
-            <p>
-              They rarely explain why it happened.
-            </p>
+<br/>
 
+<strong>We diagnose.</strong>
 
-            <p>
-              A brand can have:
-            </p>
+</p>
 
 
-            <ul className="space-y-2">
+<div className="flex flex-wrap gap-6">
 
-              <li>• Good content but weak positioning</li>
-              <li>• Strong products but unclear messaging</li>
-              <li>• Active marketing but low trust</li>
+<a href="#pricing" className="cta-accent">
 
-            </ul>
+Discover Your Blindspots
 
+</a>
 
-            <p className="font-semibold text-black">
-              Traditional audits fix the output.
-            </p>
 
-            <p className="font-semibold text-black">
-              The Clarity X-Ray™ fixes the origin.
-            </p>
+<a href="#analysis" className="cta-secondary">
 
-          </div>
+See What We Analyze
 
-        </div>
+</a>
 
-      </section>
+</div>
 
+</div>
 
+</div>
 
-      {/* DIAGNOSTIC */}
+</section>
 
-      <section className="section-spacing bg-white">
 
-        <div className="container-wide max-w-3xl">
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-10">
-            A True Diagnostic, Not a Checklist
-          </h2>
+{/* WHY AUDITS FAIL */}
 
+<section className="section-premium bg-white reveal">
 
-          <div className="space-y-6 text-lg text-gray-700">
+<div className="container-premium">
 
-            <p>
-              The Clarity X-Ray™ is a structured diagnostic process designed
-              to understand your brand the way your market experiences it.
-            </p>
+<div className="content-narrow">
 
-            <p>
-              We examine your business across strategic and perceptual layers
-              to uncover where clarity breaks down.
-            </p>
+<h2 className="text-5xl font-bold mb-6">
 
-            <p>
-              Instead of guessing what to improve, you receive a clear map of
-              what actually matters.
-            </p>
+Why Traditional Audits Fall Short
 
-          </div>
+</h2>
 
-        </div>
+<div className="section-divider mb-10"></div>
 
-      </section>
 
+<p className="text-premium mb-8">
 
+Most brand audits focus on what is easy to measure.
 
-      {/* WHAT WE ANALYZE */}
+</p>
 
-      <section id="analysis" className="section-spacing bg-gray-50">
 
-        <div className="container-wide max-w-4xl">
+<div className="grid md:grid-cols-2 gap-10 mb-10">
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-16">
-            Inside The Clarity X-Ray™
-          </h2>
+<div className="card-premium">
 
+<ul className="space-y-2 text-soft">
 
+<li>Engagement rates</li>
 
-          <div className="space-y-16 text-gray-700 text-lg">
+<li>Post frequency</li>
 
+<li>Website traffic</li>
 
-            <div>
-              <h3 className="text-2xl font-bold mb-2">
-                Brand Positioning
-              </h3>
+<li>Follower growth</li>
 
-              <p className="text-accent font-semibold mb-4">
-                How Clearly Your Market Understands You
-              </p>
+</ul>
 
-              <p>
-                We analyze whether your brand occupies a clear position in the mind of your audience.
-              </p>
+</div>
 
-              <ul className="mt-4 space-y-2">
-                <li>• Differentiation clarity</li>
-                <li>• Category positioning</li>
-                <li>• Competitive overlap</li>
-                <li>• Value articulation</li>
-                <li>• Authority signals</li>
-              </ul>
 
-            </div>
+<div className="card-premium">
 
+<ul className="space-y-2 text-soft">
 
+<li>Good content but weak positioning</li>
 
-            <div>
-              <h3 className="text-2xl font-bold mb-2">
-                Messaging Architecture
-              </h3>
+<li>Strong products but unclear messaging</li>
 
-              <p className="text-accent font-semibold mb-4">
-                Whether Your Words Build Trust or Confusion
-              </p>
+<li>Active marketing but low trust</li>
 
-              <ul className="space-y-2">
-                <li>• Brand voice consistency</li>
-                <li>• Clarity of communication</li>
-                <li>• Founder voice alignment</li>
-                <li>• Offer articulation</li>
-                <li>• Audience resonance</li>
-              </ul>
+</ul>
 
-            </div>
+</div>
 
+</div>
 
 
-            <div>
+<p className="text-xl font-semibold">
 
-              <h3 className="text-2xl font-bold mb-2">
-                Website Clarity Analysis
-              </h3>
+Traditional audits fix the output.
 
-              <p className="text-accent font-semibold mb-4">
-                How Your Website Actually Feels To A Prospect
-              </p>
+<br/>
 
-              <ul className="space-y-2">
-                <li>• First impression clarity</li>
-                <li>• Navigation logic</li>
-                <li>• Message hierarchy</li>
-                <li>• Trust signals</li>
-                <li>• Conversion flow</li>
-              </ul>
+The Clarity X-Ray™ fixes the origin.
 
-            </div>
+</p>
 
+</div>
 
+</div>
 
-            <div>
+</section>
 
-              <h3 className="text-2xl font-bold mb-2">
-                Content Narrative
-              </h3>
 
-              <p className="text-accent font-semibold mb-4">
-                Whether Your Content Builds Authority Or Noise
-              </p>
 
-              <ul className="space-y-2">
-                <li>• Content themes</li>
-                <li>• Narrative consistency</li>
-                <li>• Educational depth</li>
-                <li>• Authority signals</li>
-              </ul>
+{/* DIAGNOSTIC */}
 
-            </div>
+<section className="section-premium bg-gray-50">
 
+<div className="container-premium">
 
+<h2 className="text-5xl font-bold mb-6 reveal">
 
-            <div>
+A True Diagnostic, Not a Checklist
 
-              <h3 className="text-2xl font-bold mb-2">
-                LinkedIn Presence
-              </h3>
+</h2>
 
-              <p className="text-accent font-semibold mb-4">
-                How Your Professional Presence Actually Performs
-              </p>
+<div className="section-divider mb-12 reveal"></div>
 
-              <ul className="space-y-2">
-                <li>• Founder positioning</li>
-                <li>• Profile clarity</li>
-                <li>• Authority perception</li>
-                <li>• Audience alignment</li>
-              </ul>
 
-            </div>
+<div className="content-narrow reveal">
 
+<p className="text-premium mb-6">
 
+The Clarity X-Ray™ is a structured diagnostic process designed
+to understand your brand the way your market experiences it.
 
-            <div>
+</p>
 
-              <h3 className="text-2xl font-bold mb-2">
-                Audience Alignment
-              </h3>
 
-              <p className="text-accent font-semibold mb-4">
-                Whether You Are Speaking To The Right People
-              </p>
+<p className="text-premium">
 
-              <ul className="space-y-2">
-                <li>• Target audience clarity</li>
-                <li>• Buyer intent signals</li>
-                <li>• Messaging match</li>
-              </ul>
+We examine your business across strategic and perceptual layers
+to uncover where clarity breaks down.
 
-            </div>
+</p>
 
+</div>
 
+</div>
 
-            <div>
+</section>
 
-              <h3 className="text-2xl font-bold mb-2">
-                Trust Signals
-              </h3>
 
-              <p className="text-accent font-semibold mb-4">
-                The Invisible Factors That Influence Decisions
-              </p>
 
-              <ul className="space-y-2">
-                <li>• Authority indicators</li>
-                <li>• Proof elements</li>
-                <li>• Case studies</li>
-                <li>• Social validation</li>
-              </ul>
+{/* WHAT WE ANALYZE */}
 
-            </div>
+<section id="analysis" className="section-premium bg-white">
 
+<div className="container-premium">
 
-          </div>
+<h2 className="text-5xl font-bold mb-6 reveal">
 
-        </div>
+Inside The Clarity X-Ray™
 
-      </section>
+</h2>
 
+<div className="section-divider mb-16 reveal"></div>
 
 
-      {/* DELIVERABLES */}
 
-      <section className="section-spacing bg-white">
+<div className="grid md:grid-cols-2 gap-10">
 
-        <div className="container-wide max-w-3xl">
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">
-            What You Receive
-          </h2>
+{[
 
+"Brand Positioning",
 
-          <ul className="space-y-6 text-lg text-gray-700">
+"Messaging Architecture",
 
-            <li>
-              <strong>Blindspot Report</strong><br/>
-              A structured document explaining where clarity breaks down.
-            </li>
+"Website Clarity Analysis",
 
-            <li>
-              <strong>Narrative Diagnosis</strong><br/>
-              How your brand actually sounds to your market.
-            </li>
+"Content Narrative",
 
-            <li>
-              <strong>Alignment Roadmap</strong><br/>
-              A prioritized action plan.
-            </li>
+"LinkedIn Presence",
 
-            <li>
-              <strong>Flow Plan</strong><br/>
-              A step-by-step execution sequence.
-            </li>
+"Audience Alignment",
 
-          </ul>
+"Trust Signals"
 
-        </div>
+].map((item,index)=>(
 
-      </section>
+<div
+key={index}
+className="card-premium reveal"
+>
 
+<h3 className="text-2xl font-semibold">
 
+{item}
 
-      {/* PRICING */}
+</h3>
 
-      <section id="pricing" className="section-spacing bg-gray-50">
+</div>
 
-        <div className="container-wide max-w-3xl">
+))}
 
-          <div className="bg-white p-12 border border-gray-300 rounded text-center">
+</div>
 
-            <h2 className="text-3xl font-bold mb-4">
-              Investment
-            </h2>
+</div>
 
-            <p className="text-5xl font-bold text-accent mb-4">
-              ₹25,000
-            </p>
+</section>
 
-            <p className="text-gray-600 mb-8">
-              One-Time Diagnostic
-            </p>
 
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+{/* DELIVERABLES */}
 
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
-              />
+<section className="section-premium bg-gray-50">
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
-              />
+<div className="container-premium">
 
-              <input
-                type="text"
-                name="company"
-                placeholder="Company"
-                value={formData.company}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
-              />
+<h2 className="text-5xl font-bold mb-6 reveal">
 
-              <input
-                type="text"
-                name="website"
-                placeholder="Website"
-                value={formData.website}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
-              />
+What You Receive
 
-              <button className="cta-accent w-full">
-                Start With The Clarity X-Ray™
-              </button>
+</h2>
 
-            </form>
+<div className="section-divider mb-16 reveal"></div>
 
-          </div>
 
-        </div>
 
-      </section>
+<div className="grid md:grid-cols-2 gap-10">
 
 
-    </>
-  );
+{[
+
+"Blindspot Report",
+
+"Narrative Diagnosis",
+
+"Alignment Roadmap",
+
+"Flow Plan"
+
+].map((item,index)=>(
+
+<div
+key={index}
+className="card-premium reveal"
+>
+
+<h3 className="text-xl font-semibold">
+
+{item}
+
+</h3>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* PRICING */}
+
+<section id="pricing" className="section-premium bg-white">
+
+<div className="container-premium">
+
+<div className="card-premium max-w-xl mx-auto text-center reveal">
+
+<p className="text-accent font-semibold mb-4">
+
+INVESTMENT
+
+</p>
+
+
+<h2 className="text-3xl font-bold mb-4">
+
+The Clarity X-Ray™
+
+</h2>
+
+
+<p className="text-5xl font-bold text-accent mb-6">
+
+₹25,000
+
+</p>
+
+
+<p className="text-soft mb-8">
+
+One-Time Diagnostic
+
+</p>
+
+
+
+<form onSubmit={handleSubmit} className="space-y-4">
+
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+value={formData.name}
+onChange={handleChange}
+required
+className="w-full px-4 py-3 border border-gray-200 rounded focus:border-accent outline-none"
+/>
+
+
+<input
+type="email"
+name="email"
+placeholder="Email"
+value={formData.email}
+onChange={handleChange}
+required
+className="w-full px-4 py-3 border border-gray-200 rounded focus:border-accent outline-none"
+/>
+
+
+<input
+type="text"
+name="company"
+placeholder="Company"
+value={formData.company}
+onChange={handleChange}
+required
+className="w-full px-4 py-3 border border-gray-200 rounded focus:border-accent outline-none"
+/>
+
+
+<input
+type="text"
+name="website"
+placeholder="Website"
+value={formData.website}
+onChange={handleChange}
+className="w-full px-4 py-3 border border-gray-200 rounded focus:border-accent outline-none"
+/>
+
+
+
+<button className="cta-accent w-full">
+
+Start With The Clarity X-Ray™
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+</>
+
+);
+
 }
