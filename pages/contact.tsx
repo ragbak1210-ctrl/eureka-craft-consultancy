@@ -43,7 +43,7 @@ return(
 
 {/* HERO */}
 
-<section className="hero-premium bg-hero-premium relative">
+<section className="hero-premium bg-animated-gradient bg-hero-premium relative">
 
 <div className="yellow-glow top-[-120px] left-[-120px]"></div>
 <div className="consulting-dots bottom-[60px] right-[10%]"></div>
