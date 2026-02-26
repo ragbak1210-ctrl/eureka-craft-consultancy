@@ -16,6 +16,16 @@ export default function Home() {
 
 {/* ================= HERO ================= */}
 
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-120px] left-[-120px]"></div>
+<div className="yellow-glow bottom-[-120px] right-[-120px]"></div>
+<div className="soft-light top-[250px] right-[20%]"></div>
+<div className="circle-outline top-[180px] right-[12%]"></div>
+<div className="consulting-dots bottom-[60px] left-[8%]"></div>
+
+<div className="container-premium">      
+
 <section className="hero-premium bg-premium hero-glow">
 
 <div className="container-premium">
