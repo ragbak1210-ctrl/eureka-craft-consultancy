@@ -336,7 +336,6 @@ It is structural.
 This is why Eureka Craft builds clarity before growth.
 
 Because growth built on confusion eventually collapses.`
-
 }
 
 ]
@@ -354,50 +353,35 @@ return(
 
 {/* HERO */}
 
-<section className="hero-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
 
-<div className="container-premium">
+<div className="yellow-glow top-[-100px] left-[-100px]"></div>
+<div className="circle-outline top-[150px] right-[10%]"></div>
 
-<div className="content-narrow reveal">
+<div className="container-premium max-w-3xl">
 
 <p className="text-accent font-semibold mb-6 tracking-wide">
-
 WHERE STRATEGY MEETS UNDERSTANDING
-
 </p>
-
 
 <h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-8">
-
 Clarity Insights
-
 </h1>
 
-
 <p className="text-premium mb-10">
-
 Most brands publish content.
 Few brands build understanding.
-
 </p>
-
 
 <p className="text-premium mb-6">
-
 The Insights section is where Eureka Craft shares clarity-first thinking
 about brand strategy, narrative alignment, and digital visibility.
-
 </p>
-
 
 <p className="text-premium">
-
 Each insight reflects the same principles applied inside
 The Clarity X-Ray™ and our consulting engagements.
-
 </p>
-
-</div>
 
 </div>
 
@@ -407,18 +391,17 @@ The Clarity X-Ray™ and our consulting engagements.
 
 {/* ACCORDION */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-premium bg-diagonal relative">
+
+<div className="consulting-dots bottom-[80px] left-[10%]"></div>
 
 <div className="container-premium max-w-4xl">
 
 <div className="space-y-6">
 
 {insights.map((item,index)=>(
-<div
-key={index}
-className="card-premium reveal cursor-pointer"
->
 
+<div key={index} className="card-premium reveal cursor-pointer">
 
 <button
 onClick={()=>setOpenIndex(openIndex===index?null:index)}
@@ -426,18 +409,12 @@ className="w-full text-left p-10 flex justify-between items-center"
 >
 
 <h2 className="text-2xl font-semibold">
-
 INSIGHT {index+1} — {item.title}
-
 </h2>
 
-
 <span className="text-accent text-3xl font-light">
-
 {openIndex===index?"−":"+"}
-
 </span>
-
 
 </button>
 
@@ -448,9 +425,7 @@ INSIGHT {index+1} — {item.title}
 <div className="px-10 pb-10 border-t border-gray-200">
 
 <p className="text-gray-700 whitespace-pre-line leading-relaxed">
-
 {item.content}
-
 </p>
 
 </div>
@@ -458,9 +433,8 @@ INSIGHT {index+1} — {item.title}
 )}
 
 </div>
+
 ))}
-
-
 
 </div>
 
@@ -477,32 +451,23 @@ INSIGHT {index+1} — {item.title}
 <div className="container-premium text-center reveal">
 
 <h2 className="text-4xl font-bold mb-8">
-
 Clarity Begins With Diagnosis
-
 </h2>
 
-
 <p className="text-premium mb-10">
-
 See what your brand looks like from the outside.
-
 </p>
-
 
 <a
 href="/clarity-xray"
 className="cta-accent inline-block"
 >
-
 Start The Clarity X-Ray™
-
 </a>
 
 </div>
 
 </section>
-
 
 </>
 )
