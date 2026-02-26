@@ -32,15 +32,15 @@ return(
 
 {/* LOGO */}
 
-<Link
-href="/"
-className="text-2xl font-bold tracking-tight"
->
+<Link href="/" className="flex items-center gap-3">
 
-Eureka Craft™
+<img
+src="/logo.png"
+alt="Eureka Craft"
+className="h-8 md:h-10 w-auto"
+/>
 
 </Link>
-
 
 
 
