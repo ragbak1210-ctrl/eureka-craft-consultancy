@@ -850,11 +850,12 @@ content="Real examples of how Eureka Craft builds clarity and authority."
 
 {/* HERO */}
 
-<section className="hero-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-100px] left-[-100px]"></div>
+<div className="circle-outline top-[60px] right-[10%]"></div>
 
 <div className="container-premium">
-
-<div className="content-narrow reveal">
 
 <p className="text-accent font-semibold mb-6 tracking-wide">
 
