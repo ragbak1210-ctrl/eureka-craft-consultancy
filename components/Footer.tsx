@@ -143,9 +143,9 @@ export default function Footer() {
 
               <div className="space-y-2 text-gray-600 text-sm mb-6">
 
-                <p>hello@eurekacraft.com</p>
+                <p>consult@eurekacraft.in</p>
 
-                <p>+91 XXXXX XXXXX</p>
+                <p>+91 9548512493</p>
 
                 <p>Eureka Craft</p>
 
@@ -172,7 +172,7 @@ export default function Footer() {
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
 
             <p>
-              © 2026 Eureka Craft™. All rights reserved.
+              © 2024 Eureka Craft™. All rights reserved.
             </p>
 
             <div className="flex gap-6 mt-4 md:mt-0">
