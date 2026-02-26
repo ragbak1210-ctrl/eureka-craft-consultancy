@@ -41,11 +41,13 @@ content="The Clarity X-Ray™ is Eureka Craft’s proprietary blindspot audit de
 
 {/* HERO */}
 
-<section className="hero-premium bg-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-120px] left-[-120px]"></div>
+<div className="circle-outline top-[200px] right-[10%]"></div>
+<div className="consulting-dots bottom-[80px] left-[10%]"></div>
 
 <div className="container-premium">
-
-<div className="content-narrow reveal">
 
 <p className="text-accent font-semibold mb-6 tracking-wide">
 
@@ -192,7 +194,9 @@ The Clarity X-Ray™ fixes the origin.
 
 {/* DIAGNOSTIC */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-premium bg-grid relative">
+
+<div className="yellow-glow bottom-[-200px] right-[10%]"></div>
 
 <div className="container-premium">
 
