@@ -43,11 +43,12 @@ return(
 
 {/* HERO */}
 
-<section className="hero-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-120px] left-[-120px]"></div>
+<div className="consulting-dots bottom-[60px] right-[10%]"></div>
 
 <div className="container-premium">
-
-<div className="content-narrow reveal">
 
 <p className="text-accent font-semibold mb-6 tracking-wide">
 
@@ -85,20 +86,14 @@ That is where real progress starts.
 
 <div className="flex flex-wrap gap-6">
 
-<Link
-href="/clarity-xray"
-className="cta-accent"
->
+<Link href="/clarity-xray" className="cta-accent">
 
 Start The Clarity X-Ray™
 
 </Link>
 
 
-<a
-href="#form"
-className="cta-secondary"
->
+<a href="#form" className="cta-secondary">
 
 Schedule a Conversation
 
@@ -114,8 +109,6 @@ It is about understanding your brand as it exists today —
 and how it can work better tomorrow.
 
 </p>
-
-</div>
 
 </div>
 
@@ -290,11 +283,11 @@ This process removes guesswork — for both of us.
 
 {/* FORM */}
 
-<section id="form" className="section-premium bg-white">
+<section id="form" className="section-premium bg-grid relative">
 
-<div className="container-premium max-w-3xl">
+<div className="yellow-glow bottom-[-200px] left-[20%]"></div>
 
-<div className="reveal">
+<div className="container-premium">
 
 <h2 className="text-5xl font-bold mb-6">
 
@@ -314,72 +307,23 @@ A few details help us understand where to begin.
 
 <form onSubmit={handleSubmit} className="space-y-6">
 
+<input name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required className="w-full input-premium"/>
 
-<input
-name="name"
-placeholder="Full Name"
-value={formData.name}
-onChange={handleChange}
-required
-className="w-full input-premium"
-/>
+<input name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required className="w-full input-premium"/>
 
+<input name="company" placeholder="Company Name" value={formData.company} onChange={handleChange} required className="w-full input-premium"/>
 
-<input
-name="email"
-placeholder="Email Address"
-value={formData.email}
-onChange={handleChange}
-required
-className="w-full input-premium"
-/>
+<input name="website" placeholder="Website or LinkedIn" value={formData.website} onChange={handleChange} className="w-full input-premium"/>
 
+<input name="industry" placeholder="Industry" value={formData.industry} onChange={handleChange} className="w-full input-premium"/>
 
-<input
-name="company"
-placeholder="Company Name"
-value={formData.company}
-onChange={handleChange}
-required
-className="w-full input-premium"
-/>
-
-
-<input
-name="website"
-placeholder="Website or LinkedIn"
-value={formData.website}
-onChange={handleChange}
-className="w-full input-premium"
-/>
-
-
-<input
-name="industry"
-placeholder="Industry"
-value={formData.industry}
-onChange={handleChange}
-className="w-full input-premium"
-/>
-
-
-<textarea
-name="message"
-placeholder="Tell us about your brand"
-value={formData.message}
-onChange={handleChange}
-rows={6}
-required
-className="w-full input-premium resize-none"
-/>
-
+<textarea name="message" placeholder="Tell us about your brand" value={formData.message} onChange={handleChange} rows={6} required className="w-full input-premium resize-none"/>
 
 <button className="cta-accent w-full">
 
 Begin With Clarity
 
 </button>
-
 
 </form>
 
@@ -393,8 +337,6 @@ No automated responses.
 No generic follow-ups.
 
 </p>
-
-</div>
 
 </div>
 
@@ -428,7 +370,7 @@ Some conversations are easier to start directly.
 
 Email:
 
-<a href="mailto:hello@eurekacraft.com"
+<a href="mailto:consult@eurekacraft.in"
 className="text-accent font-semibold ml-2">
 
 consult@eurekacraft.in
@@ -455,11 +397,14 @@ Phone:
 
 LinkedIn:
 
-<span className="ml-2 font-semibold">
+<a
+href="https://www.linkedin.com/company/eureka-craft-byraghav/"
+className="ml-2 font-semibold text-accent"
+>
 
-https://www.linkedin.com/company/eureka-craft-byraghav/
+Eureka Craft
 
-</span>
+</a>
 
 </p>
 
@@ -544,10 +489,7 @@ And that perspective changes everything.
 </p>
 
 
-<Link
-href="/clarity-xray"
-className="cta-accent inline-block"
->
+<Link href="/clarity-xray" className="cta-accent inline-block">
 
 Start The Clarity X-Ray™
 
