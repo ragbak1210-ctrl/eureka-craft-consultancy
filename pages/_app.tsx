@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 import MouseGlow from '@/components/MouseGlow'
 import ParallaxProvider from '@/components/ParallaxProvider'
+import ScrollReveal from '@/components/ScrollReveal';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -91,6 +92,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <MouseGlow />
 
       <ParallaxProvider />
+
+      <ScrollReveal />
       
       <Navigation />
 
