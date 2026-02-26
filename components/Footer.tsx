@@ -60,7 +60,7 @@ export default function Footer() {
               </p>
 
               <p className="text-sm text-gray-400">
-                © 2026 Eureka Craft™
+                © 2024 Eureka Craft™
               </p>
 
             </div>
