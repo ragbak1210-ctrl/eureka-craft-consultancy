@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 
 import MouseGlow from '@/components/MouseGlow'
+import ParallaxProvider from '@/components/ParallaxProvider'
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -88,6 +89,8 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <MouseGlow />
+
+      <ParallaxProvider />
       
       <Navigation />
 
