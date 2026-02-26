@@ -207,7 +207,7 @@ content="Industries Eureka Craft works with and the clarity challenges we solve.
 
 {/* HERO */}
 
-<section className="hero-premium bg-hero-premium relative">
+<section className="hero-premium bg-animated-gradient bg-hero-premium relative">
 
 <div className="yellow-glow top-[-120px] left-[-120px]"></div>
 <div className="circle-outline top-[150px] right-[12%]"></div>
