@@ -26,10 +26,6 @@ export default function Home() {
 
 <div className="container-premium">      
 
-<section className="hero-premium bg-premium hero-glow">
-
-<div className="container-premium">
-
 <div className="grid lg:grid-cols-2 gap-24 items-center">
 
 
