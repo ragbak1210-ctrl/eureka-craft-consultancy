@@ -15,11 +15,13 @@ export default function About() {
 
 {/* HERO */}
 
-<section className="hero-premium bg-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-100px] left-[-100px]"></div>
+<div className="soft-light top-[200px] right-[20%]"></div>
+<div className="circle-outline top-[150px] right-[10%]"></div>
 
 <div className="container-premium">
-
-<div className="content-narrow reveal">
 
 <h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-10">
 
@@ -119,11 +121,11 @@ long-term trust and authority.
 
 {/* REALITY SECTION */}
 
-<section className="section-luxury bg-premium reveal">
+<section className="section-premium bg-grid relative">
 
-<div className="container-luxury">
+<div className="yellow-glow bottom-[-200px] left-[10%]"></div>
 
-<div className="content-narrow">
+<div className="container-premium">
 
 <h2 className="text-5xl font-bold heading-luxury">
 
@@ -277,9 +279,11 @@ Clarity with creativity produces momentum.
 
 {/* METHOD */}
 
-<section className="section-luxury bg-premium reveal">
+<section className="section-premium bg-diagonal relative">
 
-<div className="container-luxury">
+<div className="consulting-dots top-[80px] right-[10%]"></div>
+
+<div className="container-premium">
 
 <h2 className="text-5xl font-bold heading-luxury text-center">
 
