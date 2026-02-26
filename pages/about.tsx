@@ -15,7 +15,7 @@ export default function About() {
 
 {/* HERO */}
 
-<section className="hero-premium bg-hero-premium relative">
+<section className="hero-premium bg-animated-gradient bg-hero-premium relative">
 
 <div className="yellow-glow top-[-100px] left-[-100px]"></div>
 <div className="soft-light top-[200px] right-[20%]"></div>
