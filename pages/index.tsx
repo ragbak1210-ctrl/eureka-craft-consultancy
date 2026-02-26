@@ -15,9 +15,8 @@ export default function Home() {
 
 
 {/* ================= HERO ================= */}
-
-<section className="hero-premium bg-animated-gradient">      
-<section className="hero-premium bg-hero-premium relative">
+    
+<section className="hero-premium bg-animated-gradient bg-hero-premium relative">
 
 <div className="yellow-glow top-[-120px] left-[-120px]"></div>
 <div className="yellow-glow bottom-[-120px] right-[-120px]"></div>
