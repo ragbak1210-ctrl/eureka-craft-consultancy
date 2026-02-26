@@ -1250,3 +1250,77 @@ right:-200px;
 pointer-events:none;
 
 }
+
+/* ============================
+PREMIUM CONSULTING BACKGROUNDS
+============================ */
+
+.bg-consulting-light{
+background:
+
+radial-gradient(circle at 20% 20%, rgba(255,204,0,0.08), transparent 40%),
+
+radial-gradient(circle at 80% 60%, rgba(0,0,0,0.04), transparent 50%);
+
+}
+
+
+.bg-consulting-dark{
+
+background:
+
+linear-gradient(180deg,#000000,#111111);
+
+position:relative;
+overflow:hidden;
+
+}
+
+.bg-consulting-dark::before{
+
+content:"";
+
+position:absolute;
+
+width:600px;
+height:600px;
+
+background:radial-gradient(circle, rgba(255,204,0,0.15), transparent 70%);
+
+top:-200px;
+right:-200px;
+
+}
+
+
+/* Soft grid consulting texture */
+
+.bg-grid{
+
+background-image:
+
+linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+
+background-size:40px 40px;
+
+}
+
+
+/* Section highlight band */
+
+.highlight-band{
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,204,0,0.08),
+transparent
+);
+
+padding-top:40px;
+padding-bottom:40px;
+
+}
