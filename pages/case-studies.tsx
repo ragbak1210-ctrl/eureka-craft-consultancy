@@ -852,35 +852,25 @@ content="Real examples of how Eureka Craft builds clarity and authority."
 
 <section className="hero-premium bg-hero-premium relative">
 
-<div className="yellow-glow top-[-100px] left-[-100px]"></div>
-<div className="circle-outline top-[60px] right-[10%]"></div>
+  <div className="yellow-glow top-[-100px] left-[-100px]"></div>
+  <div className="circle-outline top-[60px] right-[10%]"></div>
 
-<div className="container-premium">
+  <div className="container-premium">
 
-<p className="text-accent font-semibold mb-6 tracking-wide">
+    <p className="text-accent font-semibold mb-6 tracking-wide">
+      CLARITY IN ACTION
+    </p>
 
-CLARITY IN ACTION
+    <h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-8">
+      Real Clarity Transformations
+    </h1>
 
-</p>
+    <p className="text-premium">
+      Real examples of how clarity-driven strategy transforms
+      positioning, authority, and growth.
+    </p>
 
-
-<h1 className="text-6xl md:text-7xl font-bold heading-luxury mb-8">
-
-Real Clarity Transformations
-
-</h1>
-
-
-<p className="text-premium">
-
-Real examples of how clarity-driven strategy transforms
-positioning, authority, and growth.
-
-</p>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -890,37 +880,29 @@ positioning, authority, and growth.
 
 <section className="section-premium bg-white">
 
-<div className="container-premium">
+  <div className="container-premium">
 
-<div className="content-narrow reveal">
+    <div className="content-narrow reveal">
 
-<h2 className="text-4xl font-bold mb-6">
+      <h2 className="text-4xl font-bold mb-6">
+        Strategy Before Execution
+      </h2>
 
-Strategy Before Execution
+      <div className="section-divider mb-10"></div>
 
-</h2>
+      <p className="text-premium mb-6">
+        Each case study reflects how clarity transforms businesses
+        before marketing begins.
+      </p>
 
-<div className="section-divider mb-10"></div>
+      <p className="text-premium">
+        These transformations begin with diagnosis —
+        not campaigns.
+      </p>
 
+    </div>
 
-<p className="text-premium mb-6">
-
-Each case study reflects how clarity transforms businesses
-before marketing begins.
-
-</p>
-
-
-<p className="text-premium">
-
-These transformations begin with diagnosis —
-not campaigns.
-
-</p>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -928,150 +910,123 @@ not campaigns.
 
 {/* ACCORDION */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-premium bg-grid relative">
 
-<div className="container-premium max-w-5xl">
+  <div className="yellow-glow bottom-[-200px] left-[20%]"></div>
 
-<div className="space-y-6">
+  <div className="container-premium max-w-5xl">
 
-{caseStudies.map((study,index)=>(
+    <div className="space-y-6">
 
-<div
-key={index}
+      {caseStudies.map((study,index)=>(
 
-className="card-premium reveal cursor-pointer hover-lift"
->
+        <div
+          key={index}
+          className="card-premium reveal cursor-pointer hover-lift"
+        >
 
+          <button
+            onClick={()=>toggle(index)}
+            className="w-full text-left flex justify-between items-center p-10"
+          >
 
-<button
-onClick={()=>toggle(index)}
+            <div>
 
-className="w-full text-left flex justify-between items-center p-10"
->
+              <p className="text-sm text-gray-500 mb-2">
+                CASE STUDY {index+1}
+              </p>
 
+              <h2 className="text-2xl font-semibold">
+                {study.title}
+              </h2>
 
-<div>
+            </div>
 
-<p className="text-sm text-gray-500 mb-2">
+            <div className="text-accent text-3xl transition">
+              {openIndex===index?"−":"+"}
+            </div>
 
-CASE STUDY {index+1}
+          </button>
 
-</p>
 
 
-<h2 className="text-2xl font-semibold">
+          {openIndex===index&&(
 
-{study.title}
+            <div className="px-10 pb-10 grid md:grid-cols-2 gap-10 text-gray-700">
 
-</h2>
+              <div className="space-y-8">
 
-</div>
+                <div>
 
+                  <h3 className="text-accent font-semibold mb-3">
+                    Problem
+                  </h3>
 
-<div className="text-accent text-3xl transition">
+                  <p className="whitespace-pre-line">
+                    {study.problem}
+                  </p>
 
-{openIndex===index?"−":"+"}
+                </div>
 
-</div>
 
-</button>
 
+                <div>
 
+                  <h3 className="text-accent font-semibold mb-3">
+                    Blindspot
+                  </h3>
 
-{openIndex===index&&(
+                  <p className="whitespace-pre-line">
+                    {study.blindspot}
+                  </p>
 
-<div className="px-10 pb-10 grid md:grid-cols-2 gap-10 text-gray-700">
+                </div>
 
-<div className="space-y-8">
+              </div>
 
-<div>
 
-<h3 className="text-accent font-semibold mb-3">
 
-Problem
+              <div className="space-y-8">
 
-</h3>
+                <div>
 
-<p className="whitespace-pre-line">
+                  <h3 className="text-accent font-semibold mb-3">
+                    Solution
+                  </h3>
 
-{study.problem}
+                  <p className="whitespace-pre-line">
+                    {study.solution}
+                  </p>
 
-</p>
+                </div>
 
-</div>
 
 
+                <div>
 
-<div>
+                  <h3 className="text-accent font-semibold mb-3">
+                    Outcome
+                  </h3>
 
-<h3 className="text-accent font-semibold mb-3">
+                  <p className="whitespace-pre-line font-medium">
+                    {study.outcome}
+                  </p>
 
-Blindspot
+                </div>
 
-</h3>
+              </div>
 
-<p className="whitespace-pre-line">
+            </div>
 
-{study.blindspot}
+          )}
 
-</p>
+        </div>
 
-</div>
+      ))}
 
-</div>
+    </div>
 
-
-
-<div className="space-y-8">
-
-<div>
-
-<h3 className="text-accent font-semibold mb-3">
-
-Solution
-
-</h3>
-
-<p className="whitespace-pre-line">
-
-{study.solution}
-
-</p>
-
-</div>
-
-
-
-<div>
-
-<h3 className="text-accent font-semibold mb-3">
-
-Outcome
-
-</h3>
-
-<p className="whitespace-pre-line font-medium">
-
-{study.outcome}
-
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-)}
-
-</div>
-
-))}
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -1081,38 +1036,25 @@ Outcome
 
 <section className="section-premium bg-white">
 
-<div className="container-premium text-center reveal">
+  <div className="container-premium text-center reveal">
 
-<h2 className="text-4xl font-bold mb-8">
+    <h2 className="text-4xl font-bold mb-8">
+      Start Your Own Clarity Transformation
+    </h2>
 
-Start Your Own Clarity Transformation
+    <p className="text-premium mb-10">
+      Every clarity transformation begins with diagnosis.
+    </p>
 
-</h2>
+    <a
+      href="/clarity-xray"
+      className="cta-accent inline-block"
+    >
+      Start The Clarity X-Ray™
+    </a>
 
-
-<p className="text-premium mb-10">
-
-Every clarity transformation begins with diagnosis.
-
-</p>
-
-
-<a
-href="/clarity-xray"
-className="cta-accent inline-block"
->
-
-Start The Clarity X-Ray™
-
-</a>
-
-</div>
+  </div>
 
 </section>
 
-
 </>
-
-);
-
-}
