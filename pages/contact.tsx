@@ -431,7 +431,7 @@ Email:
 <a href="mailto:hello@eurekacraft.com"
 className="text-accent font-semibold ml-2">
 
-hello@eurekacraft.com
+consult@eurekacraft.in
 
 </a>
 
@@ -444,7 +444,7 @@ Phone:
 
 <span className="ml-2 font-semibold">
 
-+91 XXXXX XXXXX
++91 9548512493
 
 </span>
 
@@ -457,7 +457,7 @@ LinkedIn:
 
 <span className="ml-2 font-semibold">
 
-Eureka Craft
+https://www.linkedin.com/company/eureka-craft-byraghav/
 
 </span>
 
