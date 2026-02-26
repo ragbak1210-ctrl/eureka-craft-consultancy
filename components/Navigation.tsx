@@ -37,7 +37,7 @@ return(
 <img
 src="/logo.png"
 alt="Eureka Craft"
-className="h-8 md:h-10 w-auto"
+className="h-16 md:h-20 w-auto"
 />
 
 </Link>
