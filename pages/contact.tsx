@@ -93,7 +93,12 @@ Start The Clarity X-Ray™
 </Link>
 
 
-<a href="#form" className="cta-secondary">
+<a
+href="https://cal.com/eureka-craft-ohs7ru"
+target="_blank"
+rel="noopener noreferrer"
+className="cta-secondary"
+>
 
 Schedule a Conversation
 
