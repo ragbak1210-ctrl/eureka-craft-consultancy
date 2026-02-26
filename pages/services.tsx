@@ -267,7 +267,7 @@ content="Clarity-driven consulting services including positioning, messaging, SE
 
 {/* HERO */}
 
-<section className="hero-premium bg-hero-premium relative">
+<section className="hero-premium bg-animated-gradient bg-hero-premium relative">
 
 <div className="yellow-glow top-[-120px] left-[-120px]"></div>
 <div className="soft-light top-[200px] right-[20%]"></div>
