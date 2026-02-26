@@ -461,9 +461,12 @@ We Make Brands Easier To Understand, Trust, And Choose.
 
 {/* ================= FINAL CTA ================= */}
 
-<section className="section-luxury bg-white">
+<section className="section-premium bg-consulting-yellow text-dark relative">
 
-<div className="container-luxury text-center">
+<div className="yellow-glow top-[50px] left-[20%]"></div>
+<div className="yellow-glow bottom-[50px] right-[20%]"></div>
+
+<div className="container-premium text-center">
 
 <h2 className="text-4xl font-bold mb-10">
 
