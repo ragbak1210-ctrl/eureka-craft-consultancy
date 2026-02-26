@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect } from 'react';
 
+import MouseGlow from '@/components/MouseGlow'
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -86,6 +87,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
       </Head>
 
+      <MouseGlow />
+      
       <Navigation />
 
       <Component {...pageProps} />
