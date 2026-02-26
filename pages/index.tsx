@@ -192,9 +192,12 @@ See The Clarity X-Ray →
 
 {/* ================= PROBLEM ================= */}
 
-<section className="section-luxury bg-white reveal">
+<section className="section-premium bg-grid relative">
 
-<div className="container-luxury">
+<div className="yellow-glow top-[-200px] right-[15%]"></div>
+<div className="soft-light bottom-[-200px] left-[10%]"></div>
+
+<div className="container-premium">
 
 <h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
@@ -292,9 +295,12 @@ silently lose trust and impact.
 
 {/* ================= CONSULTING AREAS ================= */}
 
-<section className="section-luxury bg-white">
+<section className="section-premium bg-diagonal relative">
 
-<div className="container-luxury">
+<div className="consulting-dots top-[50px] left-[8%]"></div>
+<div className="circle-outline bottom-[80px] right-[10%]"></div>
+
+<div className="container-premium">
 
 <h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
@@ -366,9 +372,12 @@ className="card-luxury reveal">
 
 {/* ================= INDUSTRIES ================= */}
 
-<section className="section-luxury bg-premium">
+<section className="section-premium bg-consulting-light relative">
 
-<div className="container-luxury">
+<div className="yellow-glow bottom-[-200px] left-[20%]"></div>
+<div className="circle-outline top-[100px] right-[10%]"></div>
+
+<div className="container-premium">
 
 <h2 className="text-5xl md:text-6xl font-bold heading-luxury">
 
@@ -424,9 +433,12 @@ className="card-luxury reveal">
 
 {/* ================= AUTHORITY ================= */}
 
-<section className="section-luxury bg-premium-dark text-white">
+<section className="section-premium bg-consulting-dark text-white relative">
 
-<div className="container-luxury text-center">
+<div className="yellow-glow top-[50px] left-[20%]"></div>
+<div className="yellow-glow bottom-[50px] right-[20%]"></div>
+
+<div className="container-premium text-center">
 
 <h2 className="text-5xl font-bold mb-8">
 
