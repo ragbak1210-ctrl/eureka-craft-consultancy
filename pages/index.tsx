@@ -433,7 +433,7 @@ className="card-luxury reveal">
 
 {/* ================= AUTHORITY ================= */}
 
-<section className="section-premium bg-consulting-dark text-white relative">
+<section className="section-premium bg-consulting-yellow text-black relative">
 
 <div className="yellow-glow top-[50px] left-[20%]"></div>
 <div className="yellow-glow bottom-[50px] right-[20%]"></div>
