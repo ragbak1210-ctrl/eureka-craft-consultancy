@@ -139,13 +139,11 @@ problem: `Many brands post frequently but fail to build recognition.
 
 Content looks active but not meaningful.`,
 
-approach: `We manage and execute narrative-aligned content across platforms including:
+approach: `We manage narrative-aligned content across platforms including:
 
 • LinkedIn
 • Instagram
-• Facebook
-
-Every piece aligns with the brand narrative.`,
+• Facebook`,
 
 outcome: `• Consistent visibility
 • Stronger engagement
@@ -250,7 +248,6 @@ outcome: `• Better decisions
 
 ];
 
-
 return (
 
 <>
@@ -310,8 +307,6 @@ and long-term trust.
 
 </div>
 
-</div>
-
 </section>
 
 
@@ -343,9 +338,7 @@ understanding where clarity breaks down.
 <p className="text-premium mb-6">
 
 They redesign websites.
-
 They experiment with platforms.
-
 They increase content output.
 
 </p>
@@ -356,7 +349,6 @@ They increase content output.
 But growth rarely improves without alignment.
 
 </p>
-
 
 </div>
 
@@ -382,7 +374,6 @@ key={index}
 className="card-premium border border-gray-200 bg-white reveal"
 >
 
-
 <h2 className="text-3xl md:text-4xl font-bold mb-12">
 
 {service.title}
@@ -390,9 +381,7 @@ className="card-premium border border-gray-200 bg-white reveal"
 </h2>
 
 
-
 <div className="grid md:grid-cols-3 gap-12">
-
 
 
 <div>
@@ -453,10 +442,6 @@ Outcome
 </div>
 
 ))}
-
-
-
-</div>
 
 </div>
 
