@@ -270,11 +270,13 @@ content="Clarity-driven consulting services including positioning, messaging, SE
 
 {/* HERO */}
 
-<section className="hero-premium bg-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-120px] left-[-120px]"></div>
+<div className="soft-light top-[200px] right-[20%]"></div>
+<div className="consulting-dots bottom-[60px] left-[10%]"></div>
 
 <div className="container-premium">
-
-<div className="content-narrow reveal">
 
 <p className="text-accent font-semibold mb-6 tracking-wide">
 
@@ -366,12 +368,12 @@ But growth rarely improves without alignment.
 
 {/* SERVICES */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-premium bg-grid relative">
+
+<div className="yellow-glow bottom-[-200px] right-[10%]"></div>
+<div className="circle-outline top-[50px] left-[10%]"></div>
 
 <div className="container-premium">
-
-<div className="space-y-20">
-
 
 {services.map((service,index)=>(
 
