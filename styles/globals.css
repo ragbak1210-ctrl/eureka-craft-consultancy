@@ -1569,3 +1569,28 @@ transform:translate(-200px,-120px);
 }
 
 }
+
+/* =========================
+PARALLAX ELEMENTS
+========================= */
+
+.parallax-slow{
+
+transform:translateY(var(--scrollY));
+transition:transform 0.1s linear;
+
+}
+
+.parallax-medium{
+
+transform:translateY(calc(var(--scrollY)*0.6));
+transition:transform 0.1s linear;
+
+}
+
+.parallax-fast{
+
+transform:translateY(calc(var(--scrollY)*0.3));
+transition:transform 0.1s linear;
+
+}
