@@ -207,11 +207,12 @@ content="Industries Eureka Craft works with and the clarity challenges we solve.
 
 {/* HERO */}
 
-<section className="hero-premium bg-premium hero-glow">
+<section className="hero-premium bg-hero-premium relative">
+
+<div className="yellow-glow top-[-120px] left-[-120px]"></div>
+<div className="circle-outline top-[150px] right-[12%]"></div>
 
 <div className="container-premium">
-
-<div className="content-narrow reveal">
 
 <p className="text-accent font-semibold mb-6 tracking-wide">
 
@@ -242,8 +243,6 @@ expertise into structured narratives that
 build trust and authority.
 
 </p>
-
-</div>
 
 </div>
 
@@ -302,7 +301,10 @@ Clarity transforms how markets understand you.
 
 {/* INDUSTRIES */}
 
-<section className="section-premium bg-gray-50">
+<section className="section-premium bg-diagonal relative">
+
+<div className="consulting-dots bottom-[60px] left-[10%]"></div>
+<div className="yellow-glow top-[-200px] right-[15%]"></div>
 
 <div className="container-premium">
 
@@ -327,8 +329,6 @@ className="card-premium border border-gray-200 bg-white reveal"
 
 <div className="grid md:grid-cols-2 gap-12">
 
-
-{/* Blindspots */}
 
 <div>
 
@@ -358,8 +358,6 @@ Typical Blindspots
 </div>
 
 
-
-{/* Fixes */}
 
 <div>
 
