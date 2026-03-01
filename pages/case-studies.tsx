@@ -896,7 +896,7 @@ content="Real examples of how Eureka Craft builds clarity and authority."
       </p>
 
       <p className="text-premium">
-        These transformations begin with diagnosis —
+        These transformations begin with diagnosis,
         not campaigns.
       </p>
 
