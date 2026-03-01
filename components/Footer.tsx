@@ -21,7 +21,7 @@ export default function Footer() {
 
           <p className="text-lg text-gray-600 mb-8">
             Our work is not built on templates or assumptions.
-            Every engagement begins with diagnosis — and grows through alignment.
+            Every engagement begins with diagnosis, and grows through alignment.
           </p>
 
           <p className="font-semibold text-black">
