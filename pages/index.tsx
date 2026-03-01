@@ -279,7 +279,7 @@ begins.
 
 <p className="text-soft">
 
-Our work begins with <strong>The Clarity X-Ray™</strong> —
+Our work begins with <strong>The Clarity X-Ray™</strong>,
 a proprietary blindspot audit that identifies where brands
 silently lose trust and impact.
 
