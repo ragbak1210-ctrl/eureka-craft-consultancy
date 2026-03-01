@@ -73,9 +73,9 @@ and content calendars, that story becomes fragmented.
 </p>
 
 <p className="text-soft mb-8">
-Marketing begins to look busy — but not meaningful.
-Content becomes consistent — but not memorable.
-Visibility increases — but trust remains unchanged.
+Marketing begins to look busy, but not meaningful.
+Content becomes consistent, but not memorable.
+Visibility increases, but trust remains unchanged.
 </p>
 
 <p className="text-soft mb-8">
@@ -138,9 +138,9 @@ And yet something still feels incomplete.
 
 
 <ul className="space-y-4 text-soft mb-10">
-<li>• Leads come — but not consistently</li>
-<li>• Engagement happens — but not meaningfully</li>
-<li>• Visitors arrive — but don't stay</li>
+<li>• Leads come, but not consistently</li>
+<li>• Engagement happens, but not meaningfully</li>
+<li>• Visitors arrive, but don't stay</li>
 </ul>
 
 
@@ -253,8 +253,8 @@ The Eureka Craft Method
 Step 1 — The Clarity X-Ray™
 </h3>
 <p className="text-soft">
-Everything begins with diagnosis.
-We analyze positioning, messaging, and digital presence
+Everything begins with a diagnosis.
+We analyse positioning, messaging, and digital presence
 to uncover hidden blindspots.
 </p>
 </div>
