@@ -231,7 +231,7 @@ Clarity Across Industries
 <p className="text-soft text-xl mb-6">
 
 Different industries struggle with different
-symptoms — but the root problem is clarity.
+symptoms, but the root problem is clarity.
 
 </p>
 
@@ -270,7 +270,7 @@ Clarity Is Industry-Agnostic
 <p className="text-premium mb-6">
 
 Across industries, strong businesses often struggle
-not because of weak capabilities — but because
+not because of weak capabilities, but because
 their expertise is not communicated clearly.
 
 </p>
