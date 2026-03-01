@@ -1613,3 +1613,31 @@ opacity:1;
 transform:translateY(0px);
 
 }
+
+/* =========================
+MOUSE FOLLOW GLOW (70% Smaller)
+Premium Apple-style Glow
+========================= */
+
+.mouse-glow{
+
+position:fixed;
+
+width:180px;
+height:180px;
+
+background:radial-gradient(circle,
+rgba(255,214,0,0.25),
+transparent 70%);
+
+pointer-events:none;
+
+z-index:0;
+
+filter:blur(18px);
+
+transition:transform 0.05s linear;
+
+opacity:.7;
+
+}
