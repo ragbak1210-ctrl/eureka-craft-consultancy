@@ -76,7 +76,7 @@ Most struggle because they cannot see where the real problem begins.
 
 <p className="text-premium mb-10">
 
-Before campaigns, content calendars, or marketing plans —
+Before campaigns, content calendars, or marketing plans,
 we begin with diagnosis.
 
 That is where real progress starts.
@@ -110,7 +110,7 @@ Schedule a Conversation
 <p className="text-sm text-gray-500 mt-10">
 
 This conversation is not about selling services.
-It is about understanding your brand as it exists today —
+It is about understanding your brand as it exists today,
 and how it can work better tomorrow.
 
 </p>
@@ -159,7 +159,7 @@ You May Be In The Right Place If:
 
 <p className="text-premium mt-12">
 
-Clarity often begins with recognizing that something isn't aligned.
+Clarity often begins with recognising that something isn't aligned.
 
 </p>
 
@@ -276,7 +276,7 @@ You receive a structured clarity roadmap that shows:
 
 <p className="text-center text-premium mt-16 reveal">
 
-This process removes guesswork — for both of us.
+This process removes guesswork for both of us.
 
 </p>
 
@@ -451,7 +451,7 @@ their brand to reflect the strength of their business.
 
 <p className="text-gray-400 mt-8">
 
-Every engagement begins with diagnosis —
+Every engagement begins with a diagnosis
 and grows through alignment.
 
 </p>
